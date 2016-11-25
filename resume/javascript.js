@@ -57,7 +57,6 @@ $( document ).ready(function() {
 		console.log(resume);
 		loadResume(language);
 	});
-	loadResume(language);
 	
 });
 
@@ -176,4 +175,4 @@ function loadLabels(){
 	$("#labelCertificate").text(currentLabel.certificate);
 }
 
-function 
+setTimeout(loadResume(language), 2000);
