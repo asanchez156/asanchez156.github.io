@@ -42,9 +42,9 @@ var currentResume = {};
 var currentLabel = {};
 
 var jsonString = $.get( "./resume.json", function(data) {
-	console.log(data);
     console.log( "Json loaded!" );
 	resume = data.resume;
+	console.log(resume);
 });
 
 
