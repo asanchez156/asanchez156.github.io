@@ -157,22 +157,18 @@ function loadAllData(){
 
  	var indexSkills = Math.round(currentResume.otherInformation.skills.length / 3);
  	var skills ='';
- 	console.log(currentResume.otherInformation.skills.length);
- 	for(i=0; i<currentResume.otherInformation.skills.length; i++){
- 		console.log(i + ': ' + currentResume.otherInformation.skills[i]);
- 		// for(k=0; k<indexSkills; k++){
- 		// 	if(k=0){
- 		// 		skills += '<ul class="talent">'+
- 		// 						'<li>' + currentResume.otherInformation.skills[i] + '</li>';
- 		// 	}else if (k+1==indexSkills){
- 		// 		console.log("k+1" + k+1);
- 		// 		skills += '<li class="last">' + currentResume.otherInformation.skills[i] + '</li></ul>';
- 		// 	}else{
- 		// 		skills += '<li>' + currentResume.otherInformation.skills[i] +'</li>';
- 		// 	}
- 		// 	i++;
- 		// }
- 	}
+ 	$("#skills").html("");
+ 	currentResume.otherInformation.skills.forEach( function(skill, i) {
+ 		console.log(i + ': ' + skill);
+		if(i % indexSkills == 0){
+			skills += '<ul class="talent">'+
+							'<li>' + skill + '</li>';
+		}else if ((i+1) % indexSkills==0){
+			skills += '<li class="last">' + skill + '</li></ul>';
+		}else{
+			skills += '<li>' + skill +'</li>';
+		}
+ 	});
  	$("#skills").html(skills);
 
 }
