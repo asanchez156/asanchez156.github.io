@@ -51,17 +51,15 @@ $( document ).ready(function() {
 		language="en-UK";
 	}
 
-	$.getJSON("resume.json", value, success);
+	$.getJSON("resume.json", function(data) {
+	    console.log("Json loaded!");
+		resume = data.resume;
+		console.log(resume);
+		loadResume(language);
+	});
 	loadResume(language);
 	
 });
-
-function success (data){
-    console.log("Json loaded!");
-	resume = data.resume;
-	console.log(resume);
-	loadResume(language);
-}
 
 function loadResume(language) {
 	currentResume = resume[language];
@@ -178,4 +176,4 @@ function loadLabels(){
 	$("#labelCertificate").text(currentLabel.certificate);
 }
 
- 
+function 
