@@ -178,4 +178,4 @@ function loadLabels(){
 	$("#labelCertificate").text(currentLabel.certificate);
 }
 
-function 
+ 
