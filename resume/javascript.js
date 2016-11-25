@@ -179,4 +179,4 @@ function loadLabels(){
 setTimeout(function(){
 	loadResume(language);
 	
-}, 2000);
+}, 3000);
