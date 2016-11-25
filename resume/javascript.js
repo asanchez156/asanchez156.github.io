@@ -51,15 +51,17 @@ $( document ).ready(function() {
 		language="en-UK";
 	}
 
-	$.getJSON("resume.json", value, function(data) {
-	    console.log("Json loaded!");
-		resume = data.resume;
-		console.log(resume);
-		loadResume(language);
-	});
+	$.getJSON("resume.json", value, success);
 	loadResume(language);
 	
 });
+
+function success (data){
+    console.log("Json loaded!");
+	resume = data.resume;
+	console.log(resume);
+	loadResume(language);
+}
 
 function loadResume(language) {
 	currentResume = resume[language];
