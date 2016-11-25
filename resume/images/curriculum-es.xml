@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculum languaje="es">
+	<personalInformation>
+		<name>
+			<firstName>Andoni</firstName>
+			<lastName>Sánchez Antolín</lastName>
+		</name>
+        <city>Irún, Guipúzcoa</city>
+        <country>España</country>
+		<dateOfBirth>1992</dateOfBirth>
+		<contactInfo>
+			<email img="images/email.png">andoni.sanchez.antolin@gmail.com</email>
+			<socialNetwork name="Twitter" username="@andonisanchezz" img="images/twitter.png">https://twitter.com/andonisanchezz</socialNetwork>
+			<socialNetwork name="LinkedIn" username="andonisanchezantolin" img="images/linkedin.png">https://www.linkedin.com/in/andonisanchezantolin</socialNetwork>
+            <socialNetwork name="GitHub" username="asanchez156" img="images/github.png" >https://github.com/asanchez156</socialNetwork>
+			<webSite img="images/site.png">http://asanchez.my-style.in/</webSite>
+		</contactInfo>
+		<aboutMe>
+			Ingeniero Informático, especializado en Ingeniería del Software. Apasionado por la automatización de “las cosas”, nacido en una pequeña ciudad de Guipúzcoa llamada Irún, España, hace 24 años. Desde pequeño me he interesado por la innovación y la automatización de los dispositivos que me rodean.
+			
+			En mi tiempo libre me gusta informarme sobre los cambios que constantemente se están produciendo en el sector de la información, ya sea de “gadgets” (o nuevas aplicaciones) o del desarrollo web y de apps móviles. Analizo y estructuro en mi mente cómo sería su diseño. También me gusta cocinar y elaborar platos con diseños peculiares.
+
+			Me apasiona viajar tanto por países extranjeros como por España, debido a dos aspectos totalmente diferenciados como relacionados: conocer mundo y otras culturas y asistir a audiciones o congresos informáticos.
+		</aboutMe>
+		<image>images/andonisanchezantolin.png</image>
+	</personalInformation>
+	<academicInformation>
+		<study>
+			<name>Grado en Ingeniería Informática</name>
+			<startDate>2012-09-10</startDate>
+			<endDate>2016-07-11</endDate>
+			<center>Universidad del País Vasco</center>
+			<description>Especialidad Ingeniería del Software.</description>
+		</study>
+		<study>
+			<name>Grado superior en sistemas de telecomunicaciones e informáticos</name>
+			<startDate>2010-09-10</startDate>
+			<endDate>2012-06-04</endDate>
+			<center>IEFPS Bidasoa</center>
+			<description>Antenas, telefonía, redes, lenguajes de programación.</description>
+		</study>
+        <study>
+            <name>Bachillerato Científico-Tegnológico</name>
+            <startDate>2008-09-08</startDate>
+            <endDate>2010-05-24</endDate>
+            <center>Pio Baroja BHI</center>
+        </study>
+	</academicInformation>
+	<courses>
+		<course>
+			<name>Learn Java Server Faces (JSF) from scratch</name>
+            <startDate>2016-09-22</startDate>
+            <endDate>2016-09-29</endDate>
+            <center>Udemy</center>
+			<description></description>
+		</course>
+		<course>
+			<name>Desarrollo Web con Spring 4 + JDBC + MVC + Hibernate + JSON + AJAX</name>
+            <startDate>2016-09-01</startDate>
+            <endDate>2016-09-06</endDate>
+            <center>Udemy</center>
+			<description></description>
+		</course>
+		<course>
+			<name>Congreso RITSI Cádiz 2015</name>
+            <startDate></startDate>
+            <endDate></endDate>
+            <center></center>
+			<description></description>
+		</course>
+		<course>
+			<name>Congreso RITSI Donostia/San Sebastián 2014</name>
+			<description></description>
+		</course>
+		<course>
+			<name>Curso de 12h de desarollador de aplicaciones Android.</name>
+			<startDate>2011-03-10</startDate>
+			<endDate>2011-03-13</endDate>
+			<center>Parque tecnológico de Miramón</center>
+			<description></description>
+		</course>
+	</courses>
+	<workExperience>
+		<professionalExperience type="employee">
+            <startDate>2016-09-29</startDate>
+            <endDate>Actualmente</endDate>
+            <company>Indaba Consultores S.L (LKS)</company>
+            <occupation>Programador</occupation>
+            <description>Autoformación en las tecnologías Java Server Faces, Spring 4 MVC, Ionic Framework (versiones 1 y 2) y Liferay 6.2</description>
+        </professionalExperience>
+        <professionalExperience type="practices">
+            <startDate>2016-01-27</startDate>
+            <endDate>2016-07-11</endDate>
+            <company>ATELEI Engineering</company>
+            <occupation>Realización del proyecto de fin de grado</occupation>
+            <description>Estudio y búsqueda de alternativas para la sustitución de los applets de java en entornos web. Desarrollo de una aplicación para el microcontrolador ESP8266 para comunicaciones REST a través de sockets SSL.</description>
+        </professionalExperience>
+		<professionalExperience type="practices">
+			<startDate>2015-06-15</startDate>
+			<endDate>2015-09-10</endDate>
+			<company>ATELEI Engineering</company>
+			<occupation>Ingeniero en prácticas </occupation>
+			<description>Realización del frontend y backed de una aplicación cloud de control de acceso. Configuración de servidor apache para subdominios dinámicos y despliegue de la aplicación.</description>
+		</professionalExperience>
+		<professionalExperience type="practices">
+			<startDate>2012-02-27</startDate>
+			<endDate>2012-06-06</endDate>
+			<company>Sistemas de Oficina del Bidasoa, S.L. CANON</company>
+			<occupation>Técnico en prácticas en sistemas informáticos, conectividad y máquinas multifunción.</occupation>
+			<description></description>
+		</professionalExperience>
+		<professionalExperience type="employee">
+			<startDate>2014-06-15</startDate>
+			<endDate>2016-06-20</endDate>
+			<company>Ilcapo Irun</company>
+			<occupation>Repartidor</occupation>
+			<description></description>
+		</professionalExperience>
+		<professionalExperience type="employee">
+			<startDate>2014-06-26</startDate>
+			<endDate>2014-10-25</endDate>
+			<company>Restaurante Monte Igeldo</company>
+			<occupation>Camarero extra</occupation>
+			<description></description>
+		</professionalExperience>
+		<professionalExperience type="employee">
+			<startDate>2010-06-15</startDate>
+			<endDate>2011-09-09</endDate>
+			<company>Restaurante Aeropuerto Hondarribia</company>
+			<occupation>Camarero extra</occupation>
+			<description></description>
+		</professionalExperience>
+	</workExperience>
+	<otherInformation>
+		<linguisticSkills>
+			<languageInfo motherTongue="yes">
+				<name>Español</name>
+				<level>C2</level>
+			</languageInfo>
+			<languageInfo motherTongue="yes">
+				<name>Euskera</name>
+				<level>B2</level>
+			</languageInfo>
+            <languageInfo motherTongue="no" certificate="http://www.cambridgeenglish.org/exams/first/">
+                <name>Inglés</name>
+                <level>C1.1</level>
+            </languageInfo>
+		</linguisticSkills>
+		<vehicles>
+			<vehicle license="B">Coche</vehicle>
+			<vehicle license="A2">Moto</vehicle>
+		</vehicles>
+	</otherInformation>
+</curriculum>

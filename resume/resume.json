@@ -1,0 +1,179 @@
+{
+  "resume": {
+    "es-ES": {
+      "personalInformation": {
+        "name": {
+          "firstName": "Andoni",
+          "lastName": "Sánchez Antolín"
+        },
+        "cityTown": "Irún, Guipúzcoa",
+        "country": "España",
+        "birthDate": "1992",
+        "contactInfo": {
+          "email": {
+            "img": "images/email.png",
+            "address": "andoni.sanchez.antolin@gmail.com"
+          },
+          "socialNetwork": [
+            {
+              "name": "LinkedIn",
+              "username": "andonisanchezantolin",
+              "img": "images/linkedin.png",
+              "url": "https://www.linkedin.com/in/andonisanchezantolin"
+            },
+            {
+              "name": "GitHub",
+              "username": "@asanchez156",
+              "img": "images/github.png",
+              "url": "https://github.com/asanchez156"
+            },
+            {
+              "name": "Twitter",
+              "username": "@andonisanchezz",
+              "img": "images/twitter.png",
+              "url": "https://twitter.com/andonisanchezz"
+            }
+          ],
+          "webSite": {
+            "img": "images/site.png",
+            "url": "http://asanchez.my-style.in/"
+          }
+        },
+        "aboutMe": "Ingeniero Informático, especializado en Ingeniería del Software. Apasionado por la automatización de “las cosas”, nacido en una pequeña ciudad de Guipúzcoa llamada Irún, España, hace 24 años. Desde pequeño me he interesado por la innovación y la automatización de los dispositivos que me rodean. En mi tiempo libre me gusta informarme sobre los cambios que constantemente se están produciendo en el sector de la información, ya sea de “gadgets” (o nuevas aplicaciones) o del desarrollo web y de apps móviles. Analizo y estructuro en mi mente cómo sería su diseño. También me gusta cocinar y elaborar platos con diseños peculiares. Me apasiona viajar tanto por países extranjeros como por España, debido a dos aspectos totalmente diferenciados como relacionados: conocer mundo y otras culturas y asistir a audiciones o congresos informáticos.",
+        "image": "images/andonisanchezantolin.png"
+      },
+      "educationalBackground": [
+        {
+          "name": "Grado en Ingeniería Informática",
+          "startDate": "2012-09-10",
+          "endDate": "2016-07-11",
+          "center": "Universidad del País Vasco",
+          "description": "Especialidad Ingeniería del Software."
+        },
+        {
+          "name": "Grado superior en sistemas de telecomunicaciones e informáticos",
+          "startDate": "2010-09-10",
+          "endDate": "2012-06-04",
+          "center": "IEFPS Bidasoa",
+          "description": "Antenas, telefonía, redes, lenguajes de programación."
+        },
+        {
+          "name": "Bachillerato Científico-Tegnológico",
+          "startDate": "2008-09-08",
+          "endDate": "2010-05-24",
+          "center": "Pio Baroja BHI"
+        }
+      ],
+      "courses": [
+        {
+          "name": "Learn Java Server Faces (JSF) from scratch",
+          "startDate": "2016-09-22",
+          "endDate": "2016-09-29",
+          "center": "Udemy"
+        },
+        {
+          "name": "Desarrollo Web con Spring 4 + JDBC + MVC + Hibernate + JSON + AJAX",
+          "startDate": "2016-09-01",
+          "endDate": "2016-09-06",
+          "center": "Udemy"
+        },
+        { "name": "Congreso RITSI Cádiz 2015" },
+        { "name": "Congreso RITSI Donostia/San Sebastián 2014" },
+        {
+          "name": "Curso de 12h de desarollador de aplicaciones Android.",
+          "startDate": "2011-03-10",
+          "endDate": "2011-03-13",
+          "center": "Parque tecnológico de Miramón"
+        }
+      ],
+      "professionalExperience": [
+        {
+          "type": "employee",
+          "startDate": "2016-09-29",
+          "endDate": "Actualmente",
+          "company": "Indaba Consultores S.L (LKS)",
+          "occupation": "Programador",
+          "description": "Autoformación en las tecnologías Java Server Faces, Spring 4 MVC, Ionic Framework (versiones 1 y 2) y Liferay 6.2 ."
+        },
+        {
+          "type": "practices",
+          "startDate": "2016-01-27",
+          "endDate": "2016-07-11",
+          "company": "ATELEI Engineering",
+          "occupation": "Realización del proyecto de fin de grado",
+          "description": "Estudio y búsqueda de alternativas para la sustitución de los applets de java en entornos web. Desarrollo de una aplicación para el microcontrolador ESP8266 para comunicaciones REST a través de sockets SSL."
+        },
+        {
+          "type": "practices",
+          "startDate": "2015-06-15",
+          "endDate": "2015-09-10",
+          "company": "ATELEI Engineering",
+          "occupation": "Ingeniero en prácticas ",
+          "description": "Realización del frontend y backed de una aplicación cloud de control de acceso. Configuración de servidor apache para subdominios dinámicos y despliegue de la aplicación."
+        },
+        {
+          "type": "practices",
+          "startDate": "2012-02-27",
+          "endDate": "2012-06-06",
+          "company": "Sistemas de Oficina del Bidasoa, S.L. CANON",
+          "occupation": "Técnico en prácticas en sistemas informáticos, conectividad y máquinas multifunción."
+        },
+        {
+          "type": "employee",
+          "startDate": "2014-06-15",
+          "endDate": "2016-06-20",
+          "company": "Ilcapo Irun",
+          "occupation": "Repartidor"
+        },
+        {
+          "type": "employee",
+          "startDate": "2014-06-26",
+          "endDate": "2014-10-25",
+          "company": "Restaurante Monte Igeldo",
+          "occupation": "Camarero extra"
+        },
+        {
+          "type": "employee",
+          "startDate": "2010-06-15",
+          "endDate": "2011-09-09",
+          "company": "Restaurante Aeropuerto Hondarribia",
+          "occupation": "Camarero extra"
+        }
+      ],
+      "otherInformation": {
+        "linguisticSkills": [
+          {
+            "motherTongue": "yes",
+            "name": "Español",
+            "level": "C2"
+          },
+          {
+            "motherTongue": "yes",
+            "name": "Euskera",
+            "level": "B2"
+          },
+          {
+            "motherTongue": "no",
+            "certificatePage": "http://www.cambridgeenglish.org/exams/first/",
+            "name": "Inglés",
+            "level": "C1.1",
+            "certificate": "Cambridge English First (FCE)"
+          }
+        ],
+        "vehicles": {
+          "vehicle": [
+            {
+              "license": "B",
+              "text": "Coche"
+            },
+            {
+              "license": "A2",
+              "text": "Moto"
+              }
+            ]
+          }
+        }
+      },
+    "en-UK" :{} 
+  }
+}

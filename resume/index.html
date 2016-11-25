@@ -1,0 +1,151 @@
+
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang;?>">
+
+       <head>
+          <meta http-equiv="content-type" content="application/xhtml+xml;charset=UTF-8"/>
+          <meta http-equiv="content-language" content="<?php echo $lang;?>"/>
+          <title></title>
+             <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+             <meta name="keywords" content=""/>
+             <meta name="description" content=""/>
+
+             <link rel="stylesheet"
+                type="text/css"
+                href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css"
+                media="all"/>
+             <link rel="shortcut icon" href="images/cv.png"/>
+             <link rel="stylesheet" type="text/css" href="resume.css" media="all"/>
+
+       </head>
+       <body>
+          <div id="doc2" class="yui-t7">
+                <div id="inner">
+                      <div id="hd">
+                            <div class="yui-gc">
+                                  <div class="yui-u first">
+                                        <h1 id="fullNameTitle"></h1>
+                                  </div>
+
+                                  <div class="yui-u">
+                                        <div class="contact-info">
+                                            <h3 id="titleEmail"></h3>
+                                            <h3 id="titleWebsite"></h3>
+                                        </div>
+                         <!--// .contact-info -->
+                                  </div>
+                            </div>
+                   <!--// .yui-gc -->
+                      </div>
+                <!--// hd -->
+
+                      <div class="yui-gf">
+                         <div style="float:left">
+                             <div class="yui-u first">
+                                   <h2 id="labelPersonalData"><?php echo $personal_data;?></h2>
+                             </div>
+                             <div class="yui-u">
+	                            <p class="enlarge"><strong id="labelFullName"></strong></p><p class="enlarge2" id="fullName"></p>
+	                            <p class="enlarge"><strong id="labelBirthDate"></strong></p><p class="enlarge" id="birthDate"></p>
+	                            <p class="enlarge"><strong id="labelCountry"></strong></p><p class="enlarge" id="country"></p>
+	                            <p class="enlarge"><strong id="labelCityTown"></strong></p><p class="enlarge" id="cityTown"></p>
+	                         </div>
+	                      </div>
+	                      <div id="cvPicture" style="float:right"></div>
+                      </div>
+                <!--// .yui-gf -->
+
+
+                <div class="yui-gf">
+                     <div class="yui-u first">
+                           <h2 id="labelProfessionalExperience"></h2>
+                     </div>
+               <!--// .yui-u -->
+
+                     <div id="professionalExperience" class="yui-u"></div>
+                   <!--// .yui-u -->
+                 </div>
+                <!--// .yui-gf -->
+
+                <div class="yui-gf">
+                    <div class="yui-u first">
+                        <h2 id="labelEducationalBackground"></h2>
+                    </div>
+                   <!--// .yui-u -->
+                    <div id="educationalBackground" class="yui-u"></div>
+                   <!--// .yui-u -->
+                </div>
+                <!--// .yui-gf -->
+
+                <div class="yui-gf">
+
+                  <div class="yui-u first">
+                        <h2 id="labelComplementaryTraining"></h2>
+                  </div>
+                  <!--// .yui-u -->
+                  <div id="courses" class="yui-u"></div>
+                </div>
+                <!--// .yui-gf -->
+
+                <div class="yui-gf">
+						<div class="yui-u first">
+							<h2 id="labelComputingSkills"></h2>
+						</div>
+						<div class="yui-u">
+							<ul class="talent">
+								<li>PHP/Codeigniter Framework</li>
+                <li>Node JS/ Express Framework
+                <li>Spring 4/ Java Server Faces</li>
+                <li>HTML5/CSS3/Angular JS 2</li>
+								<li class="last">Javascript/JQuery</li>
+							</ul>
+
+							<ul class="talent">
+                <li>Ionic Framework/Cordoba</li>
+								<li>.NET(C#/VB)/C/C++</li>
+                <li>Apache Web Server/Tomcat</li>
+                <li>XML/MySQL/HSQL/Hibernate</li>
+								<li class="last">Oracle SQL/SQL Server</li>
+							</ul>
+
+							<ul class="talent">
+                <li>SBC: RaspberryPi/Arduino</li>
+                <li>Microcontrolador ESP8266</li>
+                <li>Eclipse/Netbeans/Shell</li>
+								<li>CVS/Subversion/Git</li>
+								<li class="last">OS X/Linux/Windows</li>
+							</ul>
+
+						</div>
+					</div><!--// .yui-gf-->
+
+                <div class="yui-gf">
+                      <div class="yui-u first">
+                          <h2 id="labelMotherTonge"></h2>
+                      </div>
+                      <div id="motherTonge" class="yui-u">
+                      	
+                      </div>
+                </div>
+                <!--// .yui-gf -->
+
+                <div class="yui-gf">
+                  <div class="yui-u first">
+                        <h2 id="labelForeignLanguage"></h2>
+                  </div>
+                  <div id="foreignLanguage" class="yui-u"></div>
+                </div>
+                <!--// .yui-gf -->
+
+                  <div id="ft">
+                    <div id="socialNetwork" class="footerCenter"></div>
+                </div>
+                <!--// footer -->
+             </div>
+             <!-- // inner -->
+          </div>
+       </body>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       <script src="./javascript.js"></script>
+    </html>
