@@ -175,8 +175,3 @@ function loadLabels(){
 	$("#labelLevel").text(currentLabel.level);
 	$("#labelCertificate").text(currentLabel.certificate);
 }
-
-setTimeout(function(){
-	loadResume(language);
-	
-}, 3000);
