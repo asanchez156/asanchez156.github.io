@@ -178,5 +178,7 @@ function loadLabels(){
 }
 
 setTimeout(function(){
-	loadResume(language);
+	if(name===undefined){
+		loadResume(language);
+	}
 }, 1000);
