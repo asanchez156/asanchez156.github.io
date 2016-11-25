@@ -159,7 +159,6 @@ function loadAllData(){
  	var skills ='';
  	$("#skills").html("");
  	currentResume.otherInformation.skills.forEach( function(skill, i) {
- 		console.log(i + ': ' + skill);
 		if(i % indexSkills == 0){
 			skills += '<ul class="talent">'+
 							'<li>' + skill + '</li>';
