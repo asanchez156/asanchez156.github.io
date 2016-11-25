@@ -50,10 +50,11 @@ $( document ).ready(function() {
 	if (language!=="es-ES"){
 		language="en-UK";
 	}
-	
-	$.get( "./resume.json", function(data) {
+
+	$.getJSON("resume.json", function(data) {
 	    console.log("Json loaded!");
 		resume = data.resume;
+		console.log(resume);
 		loadResume(language);
 	});
 	
@@ -61,7 +62,6 @@ $( document ).ready(function() {
 
 function loadResume(language) {
 	currentResume = resume[language];
-	console.log(currentResume);
 	name = currentResume.personalInformation.name.firstName + " " + currentResume.personalInformation.name.lastName;
 	currentLabel = labels[language];
 	loadLabels();
