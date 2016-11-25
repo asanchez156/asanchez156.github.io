@@ -141,6 +141,23 @@
         }
       ],
       "otherInformation": {
+        "skills": [ 
+          "PHP/Codeigniter Framework",
+          "Node JS/ Express Framework",
+          "Spring 4/ Java Server Faces",
+          "HTML5/CSS3/Angular JS 2",
+          "Javascript/JQuery",
+          "Ionic Framework/Cordoba",
+          ".NET(C#/VB)/C/C++",
+          "Apache Web Server/Tomcat",
+          "XML/MySQL/HSQL/Hibernate",
+          "Oracle SQL/SQL Server",
+          "SBC: RaspberryPi/Arduino",
+          "Microcontrolador ESP8266",
+          "Eclipse/Netbeans/Shell",
+          "CVS/Subversion/Git",
+          "OS X/Linux/Windows"
+        ],
         "linguisticSkills": [
           {
             "motherTongue": "yes",
