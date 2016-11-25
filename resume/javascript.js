@@ -181,4 +181,4 @@ setTimeout(function(){
 	if(name===undefined){
 		loadResume(language);
 	}
-}, 1000);
+}, 2000);
