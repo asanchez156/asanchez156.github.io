@@ -52,7 +52,7 @@ $( document ).ready(function() {
 	}
 	
 	$.get( "./resume.json", function(data) {
-	    console.log( "Json loaded!" );
+	    console.log("Json loaded!");
 		resume = data.resume;
 		loadResume(language);
 	});
@@ -61,8 +61,8 @@ $( document ).ready(function() {
 
 function loadResume(language) {
 	currentResume = resume[language];
-	name = currentResume.personalInformation.name.firstName + " " + currentResume.personalInformation.name.lastName;
 	console.log(currentResume);
+	name = currentResume.personalInformation.name.firstName + " " + currentResume.personalInformation.name.lastName;
 	currentLabel = labels[language];
 	loadLabels();
 	loadAllData();
