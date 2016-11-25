@@ -55,9 +55,8 @@ $( document ).ready(function() {
 	    console.log("Json loaded!");
 		resume = data.resume;
 		console.log(resume);
-		if(name!==undefined){
-			loadResume(language);
-		}
+		loadResume(language);
+		
 	});
 	
 });
@@ -178,7 +177,6 @@ function loadLabels(){
 }
 
 setTimeout(function(){
-	if(name===undefined){
-		loadResume(language);
-	}
+	loadResume(language);
+	
 }, 2000);
