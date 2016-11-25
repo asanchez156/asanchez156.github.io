@@ -145,7 +145,7 @@ function loadAllData(){
 		}
 	});
 
-	$("#social").html("");
+	$("#socialNetwork").html("");
 	currentResume.personalInformation.contactInfo.socialNetwork.forEach( function(social, index) {
  		$("#socialNetwork").append('<p>'+
  								'<a href="' + social.url + '">'+
