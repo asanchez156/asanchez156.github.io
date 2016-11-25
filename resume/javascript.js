@@ -51,7 +51,7 @@ $( document ).ready(function() {
 		language="en-UK";
 	}
 
-	$.getJSON("resume.json", function(data) {
+	$.getJSON("resume.json", value, function(data) {
 	    console.log("Json loaded!");
 		resume = data.resume;
 		console.log(resume);
@@ -175,3 +175,5 @@ function loadLabels(){
 	$("#labelLevel").text(currentLabel.level);
 	$("#labelCertificate").text(currentLabel.certificate);
 }
+
+function 
