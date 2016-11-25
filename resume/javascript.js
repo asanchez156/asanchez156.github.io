@@ -41,12 +41,6 @@ var name = "";
 var currentResume = {};
 var currentLabel = {};
 
-var jsonString = $.get( "./resume.json", function(data) {
-    console.log( "Json loaded!" );
-	resume = data.resume;
-	console.log(resume);
-});
-
 
 $( document ).ready(function() {
 	//if (window.location.href.indexOf("-") !=-1){
@@ -56,7 +50,13 @@ $( document ).ready(function() {
 	if (language!=="es-ES"){
 		language="en-UK";
 	}
-	loadResume(language);
+	
+	$.get( "./resume.json", function(data) {
+	    console.log( "Json loaded!" );
+		resume = data.resume;
+		loadResume(language);
+	});
+	
 });
 
 function loadResume(language) {
