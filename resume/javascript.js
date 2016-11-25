@@ -62,6 +62,7 @@ $( document ).ready(function() {
 
 function loadResume(language) {
 	currentResume = resume[language];
+	console.log(currentResume);
 	name = currentResume.personalInformation.name.firstName + " " + currentResume.personalInformation.name.lastName;
 	currentLabel = labels[language];
 	loadLabels();
