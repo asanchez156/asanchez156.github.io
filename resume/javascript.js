@@ -61,6 +61,7 @@ $( document ).ready(function() {
 });
 
 function loadResume(language) {
+	console.log('Loaded');
 	currentResume = resume[language];
 	name = currentResume.personalInformation.name.firstName + " " + currentResume.personalInformation.name.lastName;
 	currentLabel = labels[language];
@@ -174,4 +175,6 @@ function loadLabels(){
 	$("#labelCertificate").text(currentLabel.certificate);
 }
 
-setTimeout(loadResume(language), 2000);
+setTimeout(function(){
+	loadResume(language);
+}, 500);
