@@ -41,7 +41,8 @@ var name = "";
 var currentResume = {};
 var currentLabel = {};
 
-var jsonString = $.getJSON( "./resume.json", function(data) {
+var jsonString = $.get( "./resume.json", function(data) {
+	console.log(data);
     console.log( "Json loaded!" );
 	resume = data.resume;
 });
