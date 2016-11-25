@@ -57,6 +57,7 @@ $( document ).ready(function() {
 		console.log(resume);
 		loadResume(language);
 	});
+	loadResume(language);
 	
 });
 
