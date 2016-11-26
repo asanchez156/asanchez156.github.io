@@ -80,7 +80,7 @@
         { "name": "Congreso RITSI Cádiz 2015" },
         { "name": "Congreso RITSI Donostia/San Sebastián 2014" },
         {
-          "name": "Curso de 12h de desarollador de aplicaciones Android.",
+          "name": "Curso de 12h de desarollador de aplicaciones Android",
           "startDate": "2011-03-10",
           "endDate": "2011-03-13",
           "center": "Parque tecnológico de Miramón"
@@ -263,18 +263,18 @@
           "center": "Udemy"
         },
         {
-          "name": "Desarrollo Web con Spring 4 + JDBC + MVC + Hibernate + JSON + AJAX",
+          "name": "Web developing with Spring 4 + JDBC + MVC + Hibernate + JSON + AJAX",
           "startDate": "2016-09-01",
           "endDate": "2016-09-06",
           "center": "Udemy"
         },
-        { "name": "Congreso RITSI Cádiz 2015" },
-        { "name": "Congreso RITSI Donostia/San Sebastián 2014" },
+        { "name": "RITSI congress Cádiz 2015" },
+        { "name": "RITSI congress Donostia/San Sebastián 2014" },
         {
-          "name": "Curso de 12h de desarollador de aplicaciones Android.",
+          "name": "Android application developer 12h course",
           "startDate": "2011-03-10",
           "endDate": "2011-03-13",
-          "center": "Parque tecnológico de Miramón"
+          "center": "Miramón Technology Park"
         }
       ],
       "professionalExperience": [
