@@ -15,7 +15,7 @@ var labels = { "es-ES" : {
 				 "level" : "Nivel",
 				 "certificate" : "Certificado"
 				},
-			  "en:UK" : {
+			  "en-UK" : {
 				 "personalData": "Profile",
 				 "fullName" : "Full name",
 				 "birthDate" : "Birthdate",
