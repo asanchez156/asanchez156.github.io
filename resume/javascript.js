@@ -1,4 +1,6 @@
 var labels = { "es" : {
+				 "language" : "Español",
+				 "lg": "es",
 				 "personalData": "Perfil",
 				 "fullName" : "Nombre completo",
 				 "birthDate" : "Año de Nacimiento",
@@ -17,6 +19,8 @@ var labels = { "es" : {
 				 "certificate" : "Certificado"
 				},
 			  "en" : {
+			  	 "language" : "English",
+				 "lg": "en",
 				 "personalData": "Profile",
 				 "fullName" : "Full name",
 				 "birthDate" : "Birthdate",
@@ -35,6 +39,7 @@ var labels = { "es" : {
 				 "certificate" : "Certificate"
 				},
 			};
+var languages = ["es","en"];
 
 var resume = {};
 var language = "";
@@ -80,6 +85,10 @@ function loadAllData(){
 	document.title = name;
 	$("#fullName").text(name);
 	$("#fullNameTitle").text(name);
+	$("#titleLanguage").html("");
+	languages.forEach(function(language,index,arr){
+		$("#titleLanguage").append(" <a href='#' onclick='loadResume(\""+ labels[language].lg +"\")'>"+ labels[language].language + "</a>");
+	});
 	$("#titleEmail").html('<a href="mailto:'+ currentResume.personalInformation.contactInfo.email.address +'">'+ currentResume.personalInformation.contactInfo.email.address +'</a>');
 	$("#titleWebsite").html('<a href="' + currentResume.personalInformation.contactInfo.webSite.url + '">' + currentResume.personalInformation.contactInfo.webSite.url + '</a>');
 	$("#birthDate").text(currentResume.personalInformation.birthDate);
