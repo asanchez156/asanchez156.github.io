@@ -1,6 +1,6 @@
 {
   "resume": {
-    "es-ES": {
+    "es": {
       "personalInformation": {
         "name": {
           "firstName": "Andoni",
@@ -191,7 +191,7 @@
         }
       }
     },
-    "en-UK" :{
+    "en" :{
       "personalInformation": {
         "name": {
           "firstName": "Andoni",
