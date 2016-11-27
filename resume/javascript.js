@@ -1,4 +1,4 @@
-var labels = { "es-ES" : {
+var labels = { "es" : {
 				 "personalData": "Perfil",
 				 "fullName" : "Nombre completo",
 				 "birthDate" : "Año de Nacimiento",
@@ -13,9 +13,10 @@ var labels = { "es-ES" : {
 				 "motherTonge" : "Idioma materno",
 				 "foreignLanguage": "Idioma extranjero",
 				 "level" : "Nivel",
+				 "coursing" : "Cursando",
 				 "certificate" : "Certificado"
 				},
-			  "en-UK" : {
+			  "en" : {
 				 "personalData": "Profile",
 				 "fullName" : "Full name",
 				 "birthDate" : "Birthdate",
@@ -30,6 +31,7 @@ var labels = { "es-ES" : {
 				 "motherTonge" : "Mother tonge",
 				 "foreignLanguage": "Foreign language",
 				 "level" : "Level",
+				 "coursing" : "Coursing",
 				 "certificate" : "Certificate"
 				},
 			};
@@ -47,8 +49,10 @@ $( document ).ready(function() {
 		//window.location.href.substr(window.location.href.indexOf("-")+1,5);
 	//}
 	language=navigator.language || navigator.userLanguage;
-	if (language!=="es-ES"){
-		language="en-UK";
+	language=language.substr(0,2);
+
+	if (language!=="es"){
+		language="en";
 	}
 
 	$.getJSON("resume.json", function(data) {
@@ -138,7 +142,7 @@ function loadAllData(){
 			var certificate = language.certificate !== undefined ? currentLabel.certificate + ': ' + language.certificate : '';
 			$("#foreignLanguage").append('<div class="talent">'+
 			                              '<h2>' + language.name + '</h2>'+
-			                              '<p>' + currentLabel.level + ': ' + language.level + '</p>' +
+			                              '<p>' + currentLabel.coursing + ': ' + language.coursing + '</p>' +
 			                              '<p>' + certificate + '</p>'+
 			                         '</div>'
 									);
@@ -188,5 +192,6 @@ function loadLabels(){
 	$("#labelMotherTonge").text(currentLabel.motherTonge);
 	$("#labelForeignLanguage").text(currentLabel.foreignLanguage);
 	$("#labelLevel").text(currentLabel.level);
+	$("#labelCoursing").text(currentLabel.coursing);
 	$("#labelCertificate").text(currentLabel.certificate);
 }
