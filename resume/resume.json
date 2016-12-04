@@ -93,7 +93,7 @@
           "endDate": "Actualmente",
           "company": "Indaba Consultores S.L (LKS)",
           "occupation": "Programador",
-          "description": "Autoformación en las tecnologías Java Server Faces, Spring 4 MVC, Ionic Framework (versiones 1 y 2) y Liferay 6.2 ."
+          "description": "Autoformación en las tecnologías Java Server Faces, Spring 4 MVC, Ionic Framework (v1 y v2) y Liferay (v6.2 y v7) ."
         },
         {
           "type": "practices",
@@ -284,7 +284,7 @@
           "endDate": "At the current time",
           "company": "Indaba Consultores S.L (LKS)",
           "occupation": "Programmer",
-          "description": "Self-training in Java Server Faces, Spring 4 MVC, Ionic Framework (versiones 1 y 2) and Liferay 6.2 technologies."
+          "description": "Self-training in Java Server Faces, Spring 4 MVC, Ionic Framework (v1 and v2) and Liferay (v6.2 and v7) technologies."
         },
         {
           "type": "practices",
@@ -299,7 +299,7 @@
           "startDate": "2015-06-15",
           "endDate": "2015-09-10",
           "company": "ATELEI Engineering",
-          "occupation": "Engineer practices ",
+          "occupation": "Engineering practices ",
           "description": "Performing the frontend and backend of a cloud access control application. Apache server configuration for dynamic subdomains and application deployment."
         },
         {
