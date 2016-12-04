@@ -30,7 +30,7 @@ var labels = { "es" : {
 				 "company" : "Company",
 				 "occupation" : "Occupation",
 				 "educationalBackground" : "Educational Background",
-				 "complementaryTraining" : "complementary Training",
+				 "complementaryTraining" : "Complementary Training",
 				 "computingSkills" : "Computing Skills",
 				 "motherTonge" : "Mother tonge",
 				 "foreignLanguage": "Foreign language",
