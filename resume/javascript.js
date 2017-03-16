@@ -70,7 +70,7 @@ $(document).ready(function() {
 				loadResume(language);
 	}).fail(function(error) {
     		console.log( "JSON Error: " ,JSON.stringify(error));
-				console.log("JSON", JSON.stringify(JSON.parse(error.responseText));
+				console.log("JSON", JSON.stringify(JSON.parse(error.responseText)));
 
 				window.location.href = "https://asanchez156.github.io/";
   }).always(function() {
