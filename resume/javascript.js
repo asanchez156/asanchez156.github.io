@@ -70,8 +70,11 @@ $(document).ready(function() {
 			loadResume(language);
 	}).done(function() {
     		console.log( "second success" );
-  }).fail(function() {
-    		console.log( "error" );
+  }).fail(function(error) {
+    		console.log( "error: " ,JSON.stringify(error));
+				resume = JSON.parse(error.responseText).resume;
+				console.log(resume);
+				loadResume(language);
   }).always(function() {
     		console.log( "finished" );
   });
