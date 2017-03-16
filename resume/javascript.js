@@ -62,15 +62,20 @@ $(document).ready(function() {
 	}
 	console.log("Language: " + language);
 
-	$.getJSON("resume.json", function(data) {
-	    console.log("Json loaded!");
-
+	$.get( "resume.json", function(data) {
+			console.log("Json loaded!");
+			console.log(data);
 			resume = data.resume;
 			console.log(resume);
 			loadResume(language);
-	});
+	}) .done(function() {
+    alert( "second success" );
+  }) .fail(function() {
+    alert( "error" );
+  }) .always(function() {
+    alert( "finished" );
+  });
 
-		console.log("Loaded!");
 });
 
 function loadResume(language) {
