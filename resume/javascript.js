@@ -50,6 +50,7 @@ var currentLabel = {};
 
 
 $( document ).ready(function() {
+	console.log("Loading page..");
 	//if (window.location.href.indexOf("-") !=-1){
 		//window.location.href.substr(window.location.href.indexOf("-")+1,5);
 	//}
