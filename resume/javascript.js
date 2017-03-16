@@ -60,14 +60,14 @@ $( document ).ready(function() {
 		language="en";
 	}
 
-	$.getJSON("resume.json", function(data) {
+	$.get("resume.json", function(data) {
 	    console.log("Json loaded!");
-		resume = data.resume;
-		console.log(resume);
-		loadResume(language);
-		
+
+			resume = JSON.parse(data.resume);
+			console.log(resume);
+			loadResume(language);
 	});
-	
+
 });
 
 function loadResume(language) {
@@ -105,7 +105,7 @@ function loadAllData(){
                             	'<h3><strong>' + currentLabel.company + ': </strong>' + professionalExperience.company+'</h3>'+
                              	'<h3><strong>' + currentLabel.occupation +': </strong>' + professionalExperience.occupation;
         profExperience += professionalExperience.description !== undefined ? ' - ' + professionalExperience.description : '';
-        profExperience += '</h3></div>';	
+        profExperience += '</h3></div>';
 		$("#professionalExperience").append(profExperience);
 	});
 
@@ -187,7 +187,7 @@ function loadAllData(){
 
 function loadLabels(){
 	$("#labelPersonalData").text(currentLabel.personalData);
-	$("#labelFullName").text(currentLabel.fullName);	
+	$("#labelFullName").text(currentLabel.fullName);
 	$("#labelCountry").text(currentLabel.country);
 	$("#labelBirthDate").text(currentLabel.birthDate);
 	$("#labelCountry").text(currentLabel.country);
