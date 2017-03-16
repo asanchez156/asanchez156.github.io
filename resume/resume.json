@@ -1,386 +1,336 @@
 {
-  "resume": {
-    "es": {
-      "personalInformation": {
-        "name": {
-          "firstName": "Andoni",
-          "lastName": "Sánchez Antolín"
-        },
-        "cityTown": "Irún, Guipúzcoa",
-        "country": "España",
-        "birthDate": "1992",
-        "contactInfo": {
-          "email": {
-            "img": "images/email.png",
-            "address": "andoni.sanchez.antolin@gmail.com"
-          },
-          "socialNetwork": [
-            {
-              "name": "LinkedIn",
-              "username": "andonisanchezantolin",
-              "img": "images/linkedin.png",
-              "url": "https://www.linkedin.com/in/andonisanchezantolin"
-            },
-            {
-              "name": "GitHub",
-              "username": "@asanchez156",
-              "img": "images/github.png",
-              "url": "https://github.com/asanchez156"
-            },
-            {
-              "name": "Twitter",
-              "username": "@andonisanchezz",
-              "img": "images/twitter.png",
-              "url": "https://twitter.com/andonisanchezz"
-            }
-          ],
-          "webSite": {
-            "img": "images/site.png",
-            "url": "http://asanchez.my-style.in/"
-          }
-        },
-        "aboutMe": "Ingeniero Informático, especializado en Ingeniería del Software. Apasionado por la automatización de “las cosas”, nacido en una pequeña ciudad de Guipúzcoa llamada Irún, España, hace 24 años. Desde pequeño me he interesado por la innovación y la automatización de los dispositivos que me rodean. En mi tiempo libre me gusta informarme sobre los cambios que constantemente se están produciendo en el sector de la información, ya sea de “gadgets” (o nuevas aplicaciones) o del desarrollo web y de apps móviles. Analizo y estructuro en mi mente cómo sería su diseño. También me gusta cocinar y elaborar platos con diseños peculiares. Me apasiona viajar tanto por países extranjeros como por España, debido a dos aspectos totalmente diferenciados como relacionados: conocer mundo y otras culturas y asistir a audiciones o congresos informáticos.",
-        "image": "images/cv.png"
-      },
-      "educationalBackground": [
-        {
-          "name": "Grado en Ingeniería Informática",
-          "startDate": "2012-09-10",
-          "endDate": "2016-07-11",
-          "center": "Universidad del País Vasco",
-          "description": "Especialidad Ingeniería del Software."
-        },
-        {
-          "name": "Grado superior en sistemas de telecomunicaciones e informáticos",
-          "startDate": "2010-09-10",
-          "endDate": "2012-06-04",
-          "center": "IEFPS Bidasoa",
-          "description": "Antenas, telefonía, redes, lenguajes de programación."
-        },
-        {
-          "name": "Bachillerato Científico-Tegnológico",
-          "startDate": "2008-09-08",
-          "endDate": "2010-05-24",
-          "center": "Pio Baroja BHI"
-        }
-      ],
-      "courses": [
-        {
-          "name": "Learn Java Server Faces (JSF) from scratch",
-          "startDate": "2016-09-22",
-          "endDate": "2016-09-29",
-          "center": "Udemy"
-        },
-        {
-          "name": "Desarrollo Web con Spring 4 + JDBC + MVC + Hibernate + JSON + AJAX",
-          "startDate": "2016-09-01",
-          "endDate": "2016-09-06",
-          "center": "Udemy"
-        },
-        { "name": "Congreso RITSI Cádiz 2015" },
-        { "name": "Congreso RITSI Donostia/San Sebastián 2014" },
-        {
-          "name": "Curso de 12h de desarollador de aplicaciones Android",
-          "startDate": "2011-03-10",
-          "endDate": "2011-03-13",
-          "center": "Parque tecnológico de Miramón"
-        }
-      ],
-      "professionalExperience": [
-        {
-          "type": "employee",
-          "startDate": "2016-09-29",
-          "endDate": "Actualmente",
-          "company": "Indaba Consultores S.L (LKS)",
-          "occupation": "Programador",
-          "description": "Autoformación en las tecnologías Java Server Faces, Spring 4 MVC, Ionic Framework (v1 y v2) y Liferay (v6.2 y v7). Spring 4 MVC, Hibernate, JSON, JDBC despliegue en Toncat. Proyectos en Java Java prime faces (JSF) despliegue en Jboss. Bases de datos Oracle Enterprise 10g/11g/12c. Ionic Framework 1 y 2 con Angular JS. Liferay 6.2 y 7 puesta en marcha y creación de portlets. Virtualization con Docker. Intructor JAVA, Swing y JDBC. Desarrollos en Node JS."
-        },
-        {
-          "type": "practices",
-          "startDate": "2016-01-27",
-          "endDate": "2016-07-11",
-          "company": "ATELEI Engineering",
-          "occupation": "Realización del proyecto de fin de grado",
-          "description": "Estudio y búsqueda de alternativas para la sustitución de los applets de java en entornos web. Desarrollo de una aplicación para el microcontrolador ESP8266 para comunicaciones REST a través de sockets SSL."
-        },
-        {
-          "type": "practices",
-          "startDate": "2015-06-15",
-          "endDate": "2015-09-10",
-          "company": "ATELEI Engineering",
-          "occupation": "Ingeniero en prácticas ",
-          "description": "Realización del frontend y backed de una aplicación cloud de control de acceso. Configuración de servidor apache para subdominios dinámicos y despliegue de la aplicación."
-        },
-        {
-          "type": "practices",
-          "startDate": "2012-02-27",
-          "endDate": "2012-06-06",
-          "company": "Sistemas de Oficina del Bidasoa, S.L. CANON",
-          "occupation": "Técnico en prácticas en sistemas informáticos, conectividad y máquinas multifunción."
-        },
-        {
-          "type": "employee",
-          "startDate": "2014-06-15",
-          "endDate": "2016-06-20",
-          "company": "Restaurante Ilcapo",
-          "occupation": "Repartidor"
-        },
-        {
-          "type": "employee",
-          "startDate": "2014-06-26",
-          "endDate": "2014-10-25",
-          "company": "Restaurante Monte Igeldo",
-          "occupation": "Camarero extra"
-        },
-        {
-          "type": "employee",
-          "startDate": "2010-06-15",
-          "endDate": "2011-09-09",
-          "company": "Restaurante Aeropuerto Hondarribia",
-          "occupation": "Camarero extra"
-        }
-      ],
-      "otherInformation": {
-        "skills": [
-          "PHP/Codeigniter Framework",
-          "Node JS/ Express Framework",
-          "Spring 4/ Java Server Faces",
-          "HTML5/CSS3/Angular JS 2",
-          "Javascript/JQuery",
-          "Ionic Framework/Cordoba",
-          ".NET(C#/VB)/C/C++",
-          "Apache Web Server/Tomcat",
-          "XML/MySQL/HSQL/Hibernate",
-          "Oracle SQL/SQL Server",
-          "SBC: RaspberryPi/Arduino",
-          "Microcontrolador ESP8266",
-          "Eclipse/Netbeans/Shell",
-          "CVS/Subversion/Git",
-          "OS X/Linux/Windows"
-        ],
-        "linguisticSkills": [
-          {
-            "motherTongue": "yes",
-            "name": "Español",
-            "level": "C2"
-          },
-          {
-            "motherTongue": "yes",
-            "name": "Euskera",
-            "level": "B2"
-          },
-          {
-            "motherTongue": "no",
-            "certificatePage": "http://www.cambridgeenglish.org/exams/first/",
-            "name": "Inglés",
-            "coursing": "C1.1",
-            "certificate": "Cambridge English First (FCE)"
-          }
-        ],
-        "vehicles": {
-          "vehicle": [
-            {
-              "license": "B",
-              "text": "Coche"
-            },
-            {
-              "license": "A2",
-              "text": "Moto"
-            }
-          ]
-        }
-      }
-    },
-    "en" :{
-      "personalInformation": {
-        "name": {
-          "firstName": "Andoni",
-          "lastName": "Sánchez Antolín"
-        },
-        "cityTown": "Irún, Guipúzcoa",
-        "country": "Spain",
-        "birthDate": "1992",
-        "contactInfo": {
-          "email": {
-            "img": "images/email.png",
-            "address": "andoni.sanchez.antolin@gmail.com"
-          },
-          "socialNetwork": [
-            {
-              "name": "LinkedIn",
-              "username": "andonisanchezantolin",
-              "img": "images/linkedin.png",
-              "url": "https://www.linkedin.com/in/andonisanchezantolin"
-            },
-            {
-              "name": "GitHub",
-              "username": "@asanchez156",
-              "img": "images/github.png",
-              "url": "https://github.com/asanchez156"
-            },
-            {
-              "name": "Twitter",
-              "username": "@andonisanchezz",
-              "img": "images/twitter.png",
-              "url": "https://twitter.com/andonisanchezz"
-            }
-          ],
-          "webSite": {
-            "img": "images/site.png",
-            "url": "http://asanchez.my-style.in/"
-          }
-        },
-        "aboutMe": "Computer Science Engineer, specialized in Software Engineering. Passionate about the automation of \"things\", born in a small city of Guipúzcoa called Irún, Spain, 24 years ago. Since I was little I have been interested in the innovation and automation of the devices that surround me. In my free time I like to inform myself about the changes that are constantly occurring in the information sector, be it \"gadgets\" (new applications) or web development and mobile apps. I analyze and structure in my mind what its design would look like. I also like to cook and elaborate dishes with peculiar designs. I am passionate about traveling both foreign countries and Spain, due to two totally different aspects as related: to know the world and other cultures and to attend auditions or computer conferences.",
-        "image": "images/cv.png"
-      },
-      "educationalBackground": [
-        {
-          "name": "Computer Science Degree",
-          "startDate": "2012-09-10",
-          "endDate": "2016-07-11",
-          "center": "The University of the Basque Country",
-          "description": "Specialized in Software Engineering."
-        },
-        {
-          "name": "Higher degree in telecommunications and computer systems",
-          "startDate": "2010-09-10",
-          "endDate": "2012-06-04",
-          "center": "IEFPS Bidasoa",
-          "description": "Antennas, telephony, networks, programming languages."
-        },
-        {
-          "name": "Science and Technology Bachelor",
-          "startDate": "2008-09-08",
-          "endDate": "2010-05-24",
-          "center": "Pio Baroja BHI"
-        }
-      ],
-      "courses": [
-        {
-          "name": "Learn Java Server Faces (JSF) from scratch",
-          "startDate": "2016-09-22",
-          "endDate": "2016-09-29",
-          "center": "Udemy"
-        },
-        {
-          "name": "Web developing with Spring 4 + JDBC + MVC + Hibernate + JSON + AJAX",
-          "startDate": "2016-09-01",
-          "endDate": "2016-09-06",
-          "center": "Udemy"
-        },
-        { "name": "RITSI congress Cádiz 2015" },
-        { "name": "RITSI congress Donostia/San Sebastián 2014" },
-        {
-          "name": "Android application developer 12h course",
-          "startDate": "2011-03-10",
-          "endDate": "2011-03-13",
-          "center": "Miramón Technology Park"
-        }
-      ],
-      "professionalExperience": [
-        {
-          "type": "employee",
-          "startDate": "2016-09-29",
-          "endDate": "At the current time",
-          "company": "Indaba Consultores S.L (LKS)",
-          "occupation": "Programmer",
-          "description": "Self-training in Java Server Faces, Spring 4 MVC, Ionic Framework (v1 and v2) and Liferay (v6.2 and v7) technologies. Spring 4 MVC, Hibernate, JSON, JDBC deployed on Toncat. Java project with Java prime faces (JSF) deployed on Jboss. Enterprise Oracle 10g/11g/12c databases. Ionic Framework 1 and 2 with Angular JS. Liferay 6.2 and 7 seting up and portlet creation. Docker virtualization. JAVA, Swing and JDBC Instructor. Node JS developments."
-        },
-        {
-          "type": "practices",
-          "startDate": "2016-01-27",
-          "endDate": "2016-07-11",
-          "company": "ATELEI Engineering",
-          "occupation": "End of degree project.",
-          "description": "Study and search for alternatives in order to replace java applets in web environments. Development of an application for the ESP8266 microcontroller for REST communications via SSL sockets."
-        },
-        {
-          "type": "practices",
-          "startDate": "2015-06-15",
-          "endDate": "2015-09-10",
-          "company": "ATELEI Engineering",
-          "occupation": "Engineering practices ",
-          "description": "Performing the frontend and backend of a cloud access control application. Apache server configuration for dynamic subdomains and application deployment."
-        },
-        {
-          "type": "practices",
-          "startDate": "2012-02-27",
-          "endDate": "2012-06-06",
-          "company": "Sistemas de Oficina del Bidasoa, S.L. CANON",
-          "occupation": "Practical technician in computer systems, connectivity and multifunction machines (printers, scanners, faxes)."
-        },
-        {
-          "type": "employee",
-          "startDate": "2014-06-15",
-          "endDate": "2016-06-20",
-          "company": "Ilcapo Restaurant",
-          "occupation": "Food deliverer"
-        },
-        {
-          "type": "employee",
-          "startDate": "2014-06-26",
-          "endDate": "2014-10-25",
-          "company": "El Torreon Restaurant",
-          "occupation": "Waiter"
-        },
-        {
-          "type": "employee",
-          "startDate": "2010-06-15",
-          "endDate": "2011-09-09",
-          "company": "Hondarribia Airport Restaurant",
-          "occupation": "Waiter"
-        }
-      ],
-      "otherInformation": {
-        "skills": [
-          "PHP/Codeigniter Framework",
-          "Node JS/ Express Framework",
-          "Spring 4/ Java Server Faces",
-          "HTML5/CSS3/Angular JS 2",
-          "Javascript/JQuery",
-          "Ionic Framework/Cordoba",
-          ".NET(C#/VB)/C/C++",
-          "Apache Web Server/Tomcat",
-          "XML/MySQL/HSQL/Hibernate",
-          "Oracle SQL/SQL Server",
-          "SBC: RaspberryPi/Arduino",
-          "ESP8266 Microcontroller",
-          "Eclipse/Netbeans/Shell",
-          "CVS/Subversion/Git",
-          "OS X/Linux/Windows"
-        ],
-        "linguisticSkills": [
-          {
-            "motherTongue": "yes",
-            "name": "Spanish",
-            "level": "C2"
-          },
-          {
-            "motherTongue": "yes",
-            "name": "Vasque",
-            "level": "B2"
-          },
-          {
-            "motherTongue": "no",
-            "certificatePage": "http://www.cambridgeenglish.org/exams/first/",
-            "name": "English",
-            "coursing": "C1.1",
-            "certificate": "Cambridge English First (FCE)"
-          }
-        ],
-        "vehicles": {
-          "vehicle": [
-            {
-              "license": "B",
-              "text": "Car"
-            },
-            {
-              "license": "A2",
-              "text": "Motorbike"
-            }
-          ]
-        }
-      }
-    }
-  }
+	"resume": {
+		"es": {
+			"personalInformation": {
+				"name": {
+					"firstName": "Andoni",
+					"lastName": "Sánchez Antolín"
+				},
+				"cityTown": "Irún, Guipúzcoa",
+				"country": "España",
+				"birthDate": "1992",
+				"contactInfo": {
+					"email": {
+						"img": "images/email.png",
+						"address": "andoni.sanchez.antolin@gmail.com"
+					},
+					"socialNetwork": [{
+						"name": "LinkedIn",
+						"username": "andonisanchezantolin",
+						"img": "images/linkedin.png",
+						"url": "https://www.linkedin.com/in/andonisanchezantolin"
+					}, {
+						"name": "GitHub",
+						"username": "@asanchez156",
+						"img": "images/github.png",
+						"url": "https://github.com/asanchez156"
+					}, {
+						"name": "Twitter",
+						"username": "@andonisanchezz",
+						"img": "images/twitter.png",
+						"url": "https://twitter.com/andonisanchezz"
+					}],
+					"webSite": {
+						"img": "images/site.png",
+						"url": "http://asanchez.my-style.in/"
+					}
+				},
+				"aboutMe": "Ingeniero Informático, especializado en Ingeniería del Software. Apasionado por la automatización de “las cosas”, nacido en una pequeña ciudad de Guipúzcoa llamada Irún, España, hace 24 años. Desde pequeño me he interesado por la innovación y la automatización de los dispositivos que me rodean. En mi tiempo libre me gusta informarme sobre los cambios que constantemente se están produciendo en el sector de la información, ya sea de “gadgets” (o nuevas aplicaciones) o del desarrollo web y de apps móviles. Analizo y estructuro en mi mente cómo sería su diseño. También me gusta cocinar y elaborar platos con diseños peculiares. Me apasiona viajar tanto por países extranjeros como por España, debido a dos aspectos totalmente diferenciados como relacionados: conocer mundo y otras culturas y asistir a audiciones o congresos informáticos.",
+				"image": "images/cv.png"
+			},
+			"educationalBackground": [{
+				"name": "Grado en Ingeniería Informática",
+				"startDate": "2012-09-10",
+				"endDate": "2016-07-11",
+				"center": "Universidad del País Vasco",
+				"description": "Especialidad Ingeniería del Software."
+			}, {
+				"name": "Grado superior en sistemas de telecomunicaciones e informáticos",
+				"startDate": "2010-09-10",
+				"endDate": "2012-06-04",
+				"center": "IEFPS Bidasoa",
+				"description": "Antenas, telefonía, redes, lenguajes de programación."
+			}, {
+				"name": "Bachillerato Científico-Tegnológico",
+				"startDate": "2008-09-08",
+				"endDate": "2010-05-24",
+				"center": "Pio Baroja BHI"
+			}],
+			"courses": [{
+				"name": "Learn Java Server Faces (JSF) from scratch",
+				"startDate": "2016-09-22",
+				"endDate": "2016-09-29",
+				"center": "Udemy"
+			}, {
+				"name": "Desarrollo Web con Spring 4 + JDBC + MVC + Hibernate + JSON + AJAX",
+				"startDate": "2016-09-01",
+				"endDate": "2016-09-06",
+				"center": "Udemy"
+			}, {
+				"name": "Congreso RITSI Cádiz 2015"
+			}, {
+				"name": "Congreso RITSI Donostia/San Sebastián 2014"
+			}, {
+				"name": "Curso de 12h de desarollador de aplicaciones Android",
+				"startDate": "2011-03-10",
+				"endDate": "2011-03-13",
+				"center": "Parque tecnológico de Miramón"
+			}],
+			"professionalExperience": [{
+				"type": "employee",
+				"startDate": "2016-09-29",
+				"endDate": "Actualmente",
+				"company": "Indaba Consultores S.L (LKS)",
+				"occupation": "Programador",
+				"description": "Autoformación en las tecnologías Java Server Faces, Spring 4 MVC, Ionic Framework (v1 y v2) y Liferay (v6.2 y v7). Spring 4 MVC, Hibernate, JSON, JDBC despliegue en Toncat. Proyectos en Java Java prime faces (JSF) despliegue en Jboss. Bases de datos Oracle Enterprise 10g/11g/12c. Ionic Framework 1 y 2 con Angular JS. Liferay 6.2 y 7 puesta en marcha y creación de portlets. Virtualization con Docker. Intructor JAVA, Swing y JDBC. Desarrollos en Node JS."
+			}, {
+				"type": "practices",
+				"startDate": "2016-01-27",
+				"endDate": "2016-07-11",
+				"company": "ATELEI Engineering",
+				"occupation": "Realización del proyecto de fin de grado",
+				"description": "Estudio y búsqueda de alternativas para la sustitución de los applets de java en entornos web. Desarrollo de una aplicación para el microcontrolador ESP8266 para comunicaciones REST a través de sockets SSL."
+			}, {
+				"type": "practices",
+				"startDate": "2015-06-15",
+				"endDate": "2015-09-10",
+				"company": "ATELEI Engineering",
+				"occupation": "Ingeniero en prácticas ",
+				"description": "Realización del frontend y backed de una aplicación cloud de control de acceso. Configuración de servidor apache para subdominios dinámicos y despliegue de la aplicación."
+			}, {
+				"type": "practices",
+				"startDate": "2012-02-27",
+				"endDate": "2012-06-06",
+				"company": "Sistemas de Oficina del Bidasoa, S.L. CANON",
+				"occupation": "Técnico en prácticas en sistemas informáticos, conectividad y máquinas multifunción."
+			}, {
+				"type": "employee",
+				"startDate": "2014-06-15",
+				"endDate": "2016-06-20",
+				"company": "Restaurante Ilcapo",
+				"occupation": "Repartidor"
+			}, {
+				"type": "employee",
+				"startDate": "2014-06-26",
+				"endDate": "2014-10-25",
+				"company": "Restaurante Monte Igeldo",
+				"occupation": "Camarero extra"
+			}, {
+				"type": "employee",
+				"startDate": "2010-06-15",
+				"endDate": "2011-09-09",
+				"company": "Restaurante Aeropuerto Hondarribia",
+				"occupation": "Camarero extra"
+			}],
+			"otherInformation": {
+				"skills": [
+					"PHP/Codeigniter Framework",
+					"Node JS/ Express Framework",
+					"Spring 4/ Java Server Faces",
+					"HTML5/CSS3/Angular JS 2",
+					"Javascript/JQuery",
+					"Ionic Framework/Cordoba",
+					".NET(C#/VB)/C/C++",
+					"Apache Web Server/Tomcat",
+					"XML/MySQL/HSQL/Hibernate",
+					"Oracle SQL/SQL Server",
+					"SBC: RaspberryPi/Arduino",
+					"Microcontrolador ESP8266",
+					"Eclipse/Netbeans/Shell",
+					"CVS/Subversion/Git",
+					"OS X/Linux/Windows"
+				],
+				"linguisticSkills": [{
+					"motherTongue": "yes",
+					"name": "Español",
+					"level": "C2"
+				}, {
+					"motherTongue": "yes",
+					"name": "Euskera",
+					"level": "B2"
+				}, {
+					"motherTongue": "no",
+					"certificatePage": "http://www.cambridgeenglish.org/exams/first/",
+					"name": "Inglés",
+					"coursing": "C1.1",
+					"certificate": "Cambridge English First (FCE)"
+				}],
+				"vehicles": {
+					"vehicle": [{
+						"license": "B",
+						"text": "Coche"
+					}, {
+						"license": "A2",
+						"text": "Moto"
+					}]
+				}
+			}
+		},
+		"en": {
+			"personalInformation": {
+				"name": {
+					"firstName": "Andoni",
+					"lastName": "Sánchez Antolín"
+				},
+				"cityTown": "Irún, Guipúzcoa",
+				"country": "Spain",
+				"birthDate": "1992",
+				"contactInfo": {
+					"email": {
+						"img": "images/email.png",
+						"address": "andoni.sanchez.antolin@gmail.com"
+					},
+					"socialNetwork": [{
+						"name": "LinkedIn",
+						"username": "andonisanchezantolin",
+						"img": "images/linkedin.png",
+						"url": "https://www.linkedin.com/in/andonisanchezantolin"
+					}, {
+						"name": "GitHub",
+						"username": "@asanchez156",
+						"img": "images/github.png",
+						"url": "https://github.com/asanchez156"
+					}, {
+						"name": "Twitter",
+						"username": "@andonisanchezz",
+						"img": "images/twitter.png",
+						"url": "https://twitter.com/andonisanchezz"
+					}],
+					"webSite": {
+						"img": "images/site.png",
+						"url": "http://asanchez.my-style.in/"
+					}
+				},
+				"aboutMe": "Computer Science Engineer, specialized in Software Engineering. Passionate about the automation of \"things\", born in a small city of Guipúzcoa called Irún, Spain, 24 years ago. Since I was little I have been interested in the innovation and automation of the devices that surround me. In my free time I like to inform myself about the changes that are constantly occurring in the information sector, be it \"gadgets\" (new applications) or web development and mobile apps. I analyze and structure in my mind what its design would look like. I also like to cook and elaborate dishes with peculiar designs. I am passionate about traveling both foreign countries and Spain, due to two totally different aspects as related: to know the world and other cultures and to attend auditions or computer conferences.",
+				"image": "images/cv.png"
+			},
+			"educationalBackground": [{
+				"name": "Computer Science Degree",
+				"startDate": "2012-09-10",
+				"endDate": "2016-07-11",
+				"center": "The University of the Basque Country",
+				"description": "Specialized in Software Engineering."
+			}, {
+				"name": "Higher degree in telecommunications and computer systems",
+				"startDate": "2010-09-10",
+				"endDate": "2012-06-04",
+				"center": "IEFPS Bidasoa",
+				"description": "Antennas, telephony, networks, programming languages."
+			}, {
+				"name": "Science and Technology Bachelor",
+				"startDate": "2008-09-08",
+				"endDate": "2010-05-24",
+				"center": "Pio Baroja BHI"
+			}],
+			"courses": [{
+				"name": "Learn Java Server Faces (JSF) from scratch",
+				"startDate": "2016-09-22",
+				"endDate": "2016-09-29",
+				"center": "Udemy"
+			}, {
+				"name": "Web developing with Spring 4 + JDBC + MVC + Hibernate + JSON + AJAX",
+				"startDate": "2016-09-01",
+				"endDate": "2016-09-06",
+				"center": "Udemy"
+			}, {
+				"name": "RITSI congress Cádiz 2015"
+			}, {
+				"name": "RITSI congress Donostia/San Sebastián 2014"
+			}, {
+				"name": "Android application developer 12h course",
+				"startDate": "2011-03-10",
+				"endDate": "2011-03-13",
+				"center": "Miramón Technology Park"
+			}],
+			"professionalExperience": [{
+				"type": "employee",
+				"startDate": "2016-09-29",
+				"endDate": "At the current time",
+				"company": "Indaba Consultores S.L (LKS)",
+				"occupation": "Programmer",
+				"description": "Self-training in Java Server Faces, Spring 4 MVC, Ionic Framework (v1 and v2) and Liferay (v6.2 and v7) technologies. Spring 4 MVC, Hibernate, JSON, JDBC deployed on Toncat. Java project with Java prime faces (JSF) deployed on Jboss. Enterprise Oracle 10g/11g/12c databases. Ionic Framework 1 and 2 with Angular JS. Liferay 6.2 and 7 seting up and portlet creation. Docker virtualization. JAVA, Swing and JDBC Instructor. Node JS developments."
+			}, {
+				"type": "practices",
+				"startDate": "2016-01-27",
+				"endDate": "2016-07-11",
+				"company": "ATELEI Engineering",
+				"occupation": "End of degree project.",
+				"description": "Study and search for alternatives in order to replace java applets in web environments. Development of an application for the ESP8266 microcontroller for REST communications via SSL sockets."
+			}, {
+				"type": "practices",
+				"startDate": "2015-06-15",
+				"endDate": "2015-09-10",
+				"company": "ATELEI Engineering",
+				"occupation": "Engineering practices ",
+				"description": "Performing the frontend and backend of a cloud access control application. Apache server configuration for dynamic subdomains and application deployment."
+			}, {
+				"type": "practices",
+				"startDate": "2012-02-27",
+				"endDate": "2012-06-06",
+				"company": "Sistemas de Oficina del Bidasoa, S.L. CANON",
+				"occupation": "Practical technician in computer systems, connectivity and multifunction machines (printers, scanners, faxes)."
+			}, {
+				"type": "employee",
+				"startDate": "2014-06-15",
+				"endDate": "2016-06-20",
+				"company": "Ilcapo Restaurant",
+				"occupation": "Food deliverer"
+			}, {
+				"type": "employee",
+				"startDate": "2014-06-26",
+				"endDate": "2014-10-25",
+				"company": "El Torreon Restaurant",
+				"occupation": "Waiter"
+			}, {
+				"type": "employee",
+				"startDate": "2010-06-15",
+				"endDate": "2011-09-09",
+				"company": "Hondarribia Airport Restaurant",
+				"occupation": "Waiter"
+			}],
+			"otherInformation": {
+				"skills": [
+					"PHP/Codeigniter Framework",
+					"Node JS/ Express Framework",
+					"Spring 4/ Java Server Faces",
+					"HTML5/CSS3/Angular JS 2",
+					"Javascript/JQuery",
+					"Ionic Framework/Cordoba",
+					".NET(C#/VB)/C/C++",
+					"Apache Web Server/Tomcat",
+					"XML/MySQL/HSQL/Hibernate",
+					"Oracle SQL/SQL Server",
+					"SBC: RaspberryPi/Arduino",
+					"ESP8266 Microcontroller",
+					"Eclipse/Netbeans/Shell",
+					"CVS/Subversion/Git",
+					"OS X/Linux/Windows"
+				],
+				"linguisticSkills": [{
+					"motherTongue": "yes",
+					"name": "Spanish",
+					"level": "C2"
+				}, {
+					"motherTongue": "yes",
+					"name": "Vasque",
+					"level": "B2"
+				}, {
+					"motherTongue": "no",
+					"certificatePage": "http://www.cambridgeenglish.org/exams/first/",
+					"name": "English",
+					"coursing": "C1.1",
+					"certificate": "Cambridge English First (FCE)"
+				}],
+				"vehicles": {
+					"vehicle": [{
+						"license": "B",
+						"text": "Car"
+					}, {
+						"license": "A2",
+						"text": "Motorbike"
+					}]
+				}
+			}
+		}
+	}
 }
