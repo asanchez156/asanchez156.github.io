@@ -60,6 +60,7 @@ $( document ).ready(function() {
 	if (language!=="es"){
 		language="en";
 	}
+	console.log("Language: " + language);
 
 	$.get("resume.json", function(data) {
 	    console.log("Json loaded!");
