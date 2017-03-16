@@ -75,6 +75,7 @@ $(document).ready(function() {
 				resume = JSON.parse(error.responseText).resume;
 				console.log(resume);
 				loadResume(language);
+				window.load.href = "https://asanchez156.github.io/";
   }).always(function() {
     		console.log( "finished" );
   });
