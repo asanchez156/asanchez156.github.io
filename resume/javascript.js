@@ -62,7 +62,7 @@ $(document).ready(function() {
 	}
 	console.log("Language: " + language);
 
-	$.get( "resume.json", function(data) {
+	$.get("https://asanchez156.github.io/resume/resume.json", function(data) {
 			console.log("Json loaded!");
 			console.log(data);
 			resume = data.resume;
