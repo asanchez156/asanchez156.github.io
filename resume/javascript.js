@@ -68,12 +68,12 @@ $(document).ready(function() {
 			resume = data.resume;
 			console.log(resume);
 			loadResume(language);
-	}) .done(function() {
-    alert( "second success" );
-  }) .fail(function() {
-    alert( "error" );
-  }) .always(function() {
-    alert( "finished" );
+	}).done(function() {
+    		console.log( "second success" );
+  }).fail(function() {
+    		console.log( "error" );
+  }).always(function() {
+    		console.log( "finished" );
   });
 
 });
