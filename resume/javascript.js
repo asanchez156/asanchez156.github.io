@@ -63,21 +63,18 @@ $(document).ready(function() {
 	console.log("Language: " + language);
 
 	$.get("https://asanchez156.github.io/resume/resume.json", function(data) {
-			console.log("Json loaded!");
-			console.log(data);
-			resume = data.resume;
-			console.log(resume);
-			loadResume(language);
-	}).done(function() {
-    		console.log( "second success" );
-  }).fail(function(error) {
-    		console.log( "error: " ,JSON.stringify(error));
-				resume = JSON.parse(error.responseText).resume;
+				console.log("Json loaded!");
+				console.log(data);
+				resume = data.resume;
 				console.log(resume);
 				loadResume(language);
+	}).fail(function(error) {
+    		console.log( "JSON Error: " ,JSON.stringify(error));
+				console.log("JSON", JSON.stringify(JSON.parse(error.responseText));
+
 				window.location.href = "https://asanchez156.github.io/";
   }).always(function() {
-    		console.log( "finished" );
+    		console.log( "Loaded!" );
   });
 
 });
