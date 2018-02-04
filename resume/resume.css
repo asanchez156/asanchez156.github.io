@@ -21,10 +21,10 @@
 /* //-- yui-grids style overrides -- */
 body { font-family: Georgia; color: #444; }
 #inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #4FC69C; border-width: 8px 0 2px 0; }
-.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 2px solid #4FC69F }
+.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 2px solid #52A9CC }
 
 /* //-- header, body, footer -- */
-#hd { margin: 2em 0 2.5em 0; padding-bottom: 1.5em; border-bottom: 2px solid #4FC69F }
+#hd { margin: 2em 0 2.5em 0; padding-bottom: 1.5em; border-bottom: 2px solid #52A9CC }
 #hd h2 { text-transform: uppercase; letter-spacing: 2px; }
 #bd, #ft { margin-bottom: 2em; }
 
@@ -38,7 +38,7 @@ h2 { font-size: 152% }
 h3, h4 { font-size: 122%; }
 h1, h2, h3, h4 { color: #333; }
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
-a { color: #4FC69F }
+a { color: #52A9CC }
 a:hover { text-decoration: none; }
 strong { font-weight: bold; }
 li { line-height: 24px; border-bottom: 1px solid #ccc; }
