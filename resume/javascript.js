@@ -98,8 +98,8 @@ function loadAllData(){
 	languages.forEach(function(language,index,arr){
 		$("#titleLanguage").append(" <a href='#' onclick='loadResume(\""+ labels[language].lg +"\")'>"+ labels[language].language + "</a>");
 	});
-	$("#titleEmail").html('<a class="top-social" href="mailto:'+ currentResume.personalInformation.contactInfo.email.address +'">'+ currentResume.personalInformation.contactInfo.email.address +'</a>');
-	$("#titleWebsite").html('<a class="top-social" href="' + currentResume.personalInformation.contactInfo.webSite.url + '">' + currentResume.personalInformation.contactInfo.webSite.url + '</a>');
+	$("#titleEmail").html('<a class="top-social" target="_blank" href="mailto:'+ currentResume.personalInformation.contactInfo.email.address +'">'+ currentResume.personalInformation.contactInfo.email.address +'</a>');
+	$("#titleWebsite").html('<a class="top-social" target="_blank" href="' + currentResume.personalInformation.contactInfo.webSite.url + '">' + currentResume.personalInformation.contactInfo.webSite.url + '</a>');
 	$("#birthDate").text(currentResume.personalInformation.birthDate);
 	$("#country").text(currentResume.personalInformation.country);
 	$("#cityTown").text(currentResume.personalInformation.cityTown);
