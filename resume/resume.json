@@ -97,7 +97,7 @@
               "endDate":"Actualmente",
               "company":"Iris Advanced Engineering",
               "occupation":"Full-stack developer",
-              "description":"Desarrollos en: PostgreSQL database con pgAdmin. Backend: Python con Falcon lanzada en virtualenv y desarrollada con PyCharm IDE. Node JS y Restify. Frontend: Angular 2 con el IDE de Visual Studio Code. Paquetes de npm. Typescript. Gulp (automaticación de tareas para desarrollo.) XML and XSD para generación automatica (previamente compilada) de código javascript de cliente y servidor. Methodolia de desarrollo: Scrum. Contol de versiones: Git."
+              "description":"Desarrollos en: PostgreSQL database con pgAdmin. Backend: Python con Falcon lanzada en virtualenv y desarrollada con PyCharm IDE. Node JS y Restify. Frontend: Angular 2 con el IDE de Visual Studio Code. Paquetes de npm. Typescript. Gulp (automaticación de tareas para desarrollo.) XML and XSD para generación automatica (previamente compilada) de código javascript de cliente y servidor. Metodología de desarrollo: Scrum. Contol de versiones: Git."
             },
             {
               "type":"employee",
