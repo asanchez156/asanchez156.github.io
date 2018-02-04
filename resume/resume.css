@@ -20,7 +20,7 @@
 
 /* //-- yui-grids style overrides -- */
 body { font-family: Georgia; color: #444; }
-#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #4FC69C; border-width: 8px 0 2px 0; }
+#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #52A9CC; border-width: 8px 0 2px 0; }
 .yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 2px solid #52A9CC }
 
 /* //-- header, body, footer -- */
