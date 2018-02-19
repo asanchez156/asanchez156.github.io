@@ -1,82 +1,294 @@
-/*
----------------------------------------------------------------------------------
-	STRIPPED DOWN RESUME TEMPLATE
-    html resume
+body {
+    /* font-family: Georgia; */
+}
 
-    v0.9: 5/28/09
+.loader-container{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    align-items: center; /*centers items on the cross-axis (y by default)*/
+}
 
-    design and code by: thingsthatarebrown.com 
-                        (matt brown)
-                        
-    modify by: Andoni Sánchez Antolín
----------------------------------------------------------------------------------
-*/
+.loader-container .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #52A9CC;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+  
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
-.msg { padding: 10px; background: #222; position: relative; }
-.msg h1 { color: #fff;  }
-.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
-.msg a:hover { background: #266400; }
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
 
-/* //-- yui-grids style overrides -- */
-body { font-family: Georgia; color: #444; }
-#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #52A9CC; border-width: 8px 0 2px 0; }
-.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 2px solid #52A9CC }
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 1s linear;
+}
+
+.cv-inner-container {
+    padding: 10px 80px;
+    margin: 80px auto;
+    background: #e7eef1;
+    border: solid #52A9CC;
+    color: #135C78;
+    border-width: 8px 0 2px 0;
+}
+
+.section-container {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 2px solid #52A9CC;
+}
 
 /* //-- header, body, footer -- */
-#hd { margin: 2em 0 2.5em 0; padding-bottom: 1.5em; border-bottom: 2px solid #52A9CC }
-#hd h2 { text-transform: uppercase; letter-spacing: 2px; }
-#bd, #ft { margin-bottom: 2em; }
 
-/* //-- footer -- */
-#ft { padding: 1em 0 5em 0; font-size: 92%; text-align: center; }
-#ft p { padding: 2; margin-bottom: 0; text-align: left;   }
+.header-container {
+    margin: 2em 0 2.5em 0;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid #52A9CC;
+}
+
+.header-container h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-container {
+    margin-bottom: 2em;
+    padding: 0.5em 0 1em 0;
+}
 
 /* //-- core typography and style -- */
-#hd h1 { font-size: 34px; text-transform: uppercase; letter-spacing: 2px; }
-h2 { font-size: 152% }
-h3, h4 { font-size: 122%; }
-h1, h2, h3, h4 { color: #333; }
-p { font-size: 100%; line-height: 18px; padding-right: 3em; }
-a { color: #52A9CC; text-decoration: none; }
-strong { font-weight: bold; }
-li { line-height: 24px; border-bottom: 1px solid #ccc; }
-p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; width: 330px;}
-p.enlarge2 { font-size: 144%; padding-right: 7.5em; line-height: 24px; width: 330px;}
-p.enlarge span { color: #000 }
-.contact-info { margin-top: 7px; text-align: right; }
-.first h2 { font-style: italic; }
-.last { border-bottom: 0 }
 
+.header-container .title-name {
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-container .header-inner-container {
+    display: flex;
+}
+
+h2 {
+    font-size: 152%
+}
+
+h3, h4 {
+    font-size: 122%;
+}
+
+p {
+    font-size: 100%;
+    line-height: 18px;
+    padding-right: 3em;
+}
+
+a {
+    color: #52A9CC;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+li {
+    line-height: 24px;
+    border-bottom: 0.5px solid #52A9CC;
+}
+
+p.enlarge {
+    font-size: 144%;
+    padding-right: 6.5em;
+    line-height: 24px;
+    width: 330px;
+}
+
+p.enlarge2 {
+    font-size: 144%;
+    padding-right: 7.5em;
+    line-height: 24px;
+    width: 330px;
+}
+
+p.enlarge span {
+    color: #000
+}
+
+
+.language-container {
+    display: flex;
+}
+
+.language-container .language-item {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.contact-info-container .contact-info-item {
+    font-size: 16px;
+    margin-top: 7px;
+    text-align: right;
+}
+
+.cv-photo-container {
+    float: right;
+}
+
+.cv-photo-container .cv-photo {
+    border-radius: 10px;
+    width: 150px;
+    height: 200px;
+}
+
+.first h2 {
+    font-style: italic;
+}
+
+.last {
+    border-bottom: 0
+}
 
 /* //-- section styles -- */
 
-a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
-a#pdf:hover { background: #222; }
-
-.job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
-.job h4 { position: absolute; top: 0.35em; right: 0 }
-.job p { margin: 0.75em 0 3em 0; }
-
-.last { border: none; }
-.skills-list {  }
-.skills-list ul { margin: 0; }
-.skills-list li { margin: 3px 0; padding: 3px 0; }
-.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
-.talent { width: 32%; float: left }
-.talent h2 { margin-bottom: 6px; }
-
-#srt-ttab { margin-bottom: 100px; text-align: center;  }
-#srt-ttab img.last { margin-top: 20px }
-
-/* --// override to force 1/8th width grids -- */
-.yui-gf .yui-u{width:75.2%;}
-.yui-gf div.first{width:15.0%;}
-
-
-.align {
-	vertical-align:middle;
+/* a#pdf {
+    display: block;
+    float: left;
+    background: #666;
+    color: white;
+    padding: 6px 50px 6px 12px;
+    margin-bottom: 6px;
+    text-decoration: none;
 }
 
-.footerCenter { width: 20%; margin: 0 auto;  }
+a#pdf:hover {
+    background: #222;
+} */
 
+.job {
+    position: relative;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 0.5px solid #52A9CC;
+}
+
+.job h4 {
+    position: absolute;
+    top: 0.35em;
+    right: 0
+}
+
+.job p {
+    margin: 0.75em 0 3em 0;
+}
+
+.last {
+    border: none;
+}
+
+.skills-list {}
+
+.skills-list ul {
+    margin: 0;
+}
+
+.skills-list li {
+    margin: 3px 0;
+    padding: 3px 0;
+}
+
+.skills-list li span {
+    font-size: 152%;
+    display: block;
+    margin-bottom: -2px;
+    padding: 0
+}
+
+.talent {
+    width: 32%;
+    float: left
+}
+
+.talent h2 {
+    margin-bottom: 6px;
+}
+
+.section-container .title-container {
+    width: 75.2%;
+}
+
+.section-container div.first {
+    width: 15.0%;
+}
+
+.footer-container .social-container {
+    width: 170px;
+    margin: 0 auto;
+}
+
+.footer-container .social-container .social-item {
+    color: #52A9CC;
+    font-size: 92%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.footer-container .social-container .social-item .social-image {
+    /* display: inline-block; */
+    height: 30px;
+    flex: 0.15;
+    margin-right: 10px;
+}
+.footer-container .social-container .social-item .social-name {
+    flex: 0.8;
+}
+
+.footer-container .social-container .social-item .social-image,
+.footer-container .social-container .social-item .social-name,
+.footer-container .social-container .social-item,
+.language-container .language-item,
+.contact-info-container .contact-info-item {
+    color: #52A9CC;
+    cursor: pointer;
+}
+
+.footer-container .social-container .social-item:hover,
+.language-container .language-item:hover,
+.contact-info-container .contact-info-item:hover {
+    opacity: 0.7;
+}
+.footer-container .social-container .social-item:active,
+.language-container .language-item:active,
+.contact-info-container .contact-info-item:active {
+    color: #135C78;
+    opacity: 1;
+}
+
+.click .disabled {
+    cursor: not-allowed;
+}

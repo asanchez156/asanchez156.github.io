@@ -1,215 +1,255 @@
-var labels = { "es" : {
-				 "language" : "Español",
-				 "lg": "es",
-				 "personalData": "Perfil",
-				 "fullName" : "Nombre completo",
-				 "birthDate" : "Año de Nacimiento",
-				 "country" : "País",
-				 "cityTown" : "Ciudad",
-				 "professionalExperience" : "Experiencia Profesional",
-				 "company" : "Empresa",
-				 "occupation" : "Cargo",
-				 "educationalBackground" : "Formación Academica",
-				 "complementaryTraining" : "Formación Complementaria",
-				 "computingSkills" : "Habilidades Informáticas",
-				 "motherTonge" : "Idioma materno",
-				 "foreignLanguage": "Idioma extranjero",
-				 "level" : "Nivel",
-				 "coursing" : "Cursando",
-				 "certificate" : "Certificado"
-				},
-			  "en" : {
-			  	 "language" : "English",
-				 "lg": "en",
-				 "personalData": "Profile",
-				 "fullName" : "Full name",
-				 "birthDate" : "Birthdate",
-				 "country" : "Country",
-				 "cityTown" : "City",
-				 "professionalExperience" : "Professional Experience",
-				 "company" : "Company",
-				 "occupation" : "Occupation",
-				 "educationalBackground" : "Educational Background",
-				 "complementaryTraining" : "Complementary Training",
-				 "computingSkills" : "Computing Skills",
-				 "motherTonge" : "Mother tonge",
-				 "foreignLanguage": "Foreign language",
-				 "level" : "Level",
-				 "coursing" : "Coursing",
-				 "certificate" : "Certificate"
-				},
-			};
-var languages = ["es","en"];
+var labelsTrans = new Map ([ 
+	[ "es" , {
+		"language" : "Español",
+		"lg": "es",
+		"personalData": "Perfil",
+		"fullName" : "Nombre completo",
+		"birthDate" : "Año de Nacimiento",
+		"country" : "País",
+		"cityTown" : "Ciudad",
+		"professionalExperience" : "Experiencia Profesional",
+		"company" : "Empresa",
+		"occupation" : "Cargo",
+		"educationalBackground" : "Formación Academica",
+		"complementaryTraining" : "Formación Complementaria",
+		"computingSkills" : "Habilidades Informáticas",
+		"motherTonge" : "Idioma materno",
+		"foreignLanguage": "Idioma extranjero",
+		"level" : "Nivel",
+		"coursing" : "Cursando",
+		"certificate" : "Certificado"
+	}],
+	[ "en" , {
+		"language" : "English",
+		"lg": "en",
+		"personalData": "Profile",
+		"fullName" : "Full name",
+		"birthDate" : "Birthdate",
+		"country" : "Country",
+		"cityTown" : "City",
+		"professionalExperience" : "Professional Experience",
+		"company" : "Company",
+		"occupation" : "Occupation",
+		"educationalBackground" : "Educational Background",
+		"complementaryTraining" : "Complementary Training",
+		"computingSkills" : "Computing Skills",
+		"motherTonge" : "Mother tonge",
+		"foreignLanguage": "Foreign language",
+		"level" : "Level",
+		"coursing" : "Coursing",
+		"certificate" : "Certificate"
+	}]
+]);
 
-var resume = {};
-var language = "";
+const COMMON = "common";
+const ES = "es";
+const EN = "en";
 
+var languages = [ES, EN];
+var resume = new Map([]);
 var name = "";
-var currentResume = {};
-var currentLabel = {};
 
-
-$(document).ready(function() {
-	console.log("Loading page..");
-	//if (window.location.href.indexOf("-") !=-1){
-		//window.location.href.substr(window.location.href.indexOf("-")+1,5);
-	//}
-	language=navigator.language || navigator.userLanguage;
-	language=language.substr(0,2);
-
-	if (language!=="es"){
-		language="en";
-	}
-	console.log("Language: " + language);
-
-	$.get("https://asanchez156.github.io/resume/resume.json", function(data) {
-				console.log("Json loaded!");
-				console.log(data);
-				resume = data.resume;
-				console.log(resume);
-				loadResume(language);
-	}).fail(function(error) {
-    		console.log( "JSON Error: " ,JSON.stringify(error));
-				console.log("JSON", JSON.stringify(JSON.parse(error.responseText)));
-
-				window.location.href = "https://asanchez156.github.io/";
-  }).always(function() {
-    		console.log( "Loaded!" );
-  });
-
-});
-
-function loadResume(language) {
-	console.log('Loaded');
-	currentResume = resume[language];
-	name = currentResume.personalInformation.name.firstName + " " + currentResume.personalInformation.name.lastName;
-	currentLabel = labels[language];
-	loadLabels();
-	loadAllData();
+function mapResume(data) {
+	Object.keys(data).forEach(key => {
+		resume.set(key, data[key]);
+	});
 }
 
+function loadLabels(lang) {
+	var langLabel = labelsTrans.get(lang);
+	$("#labelPersonalData").text(langLabel.personalData);
+	$("#labelFullName").text(langLabel.fullName);
+	$("#labelCountry").text(langLabel.country);
+	$("#labelBirthDate").text(langLabel.birthDate);
+	$("#labelCountry").text(langLabel.country);
+	$("#labelCityTown").text(langLabel.cityTown);
+	$("#labelProfessionalExperience").text(langLabel.professionalExperience);
+	$("#labelCompany").text(langLabel.company);
+	$("#labelOccupation").text(langLabel.occupation);
+	$("#labelEducationalBackground").text(langLabel.educationalBackground);
+	$("#labelComplementaryTraining").text(langLabel.complementaryTraining);
+	$("#labelComputingSkills").text(langLabel.computingSkills);
+	$("#labelMotherTonge").text(langLabel.motherTonge);
+	$("#labelForeignLanguage").text(langLabel.foreignLanguage);
+	$("#labelLevel").text(langLabel.level);
+	$("#labelCoursing").text(langLabel.coursing);
+	$("#labelCertificate").text(langLabel.certificate);
+}
 
-function loadAllData(){
+function loadPersonalInfo(data, langLabel) {
+	
+	$("#titleEmail").html(`<div onclick="window.location='mailto:${data.contactInfo.email.address}';">${data.contactInfo.email.address}</div>`);
+	$("#titleWebsite").html(`<div onclick="window.open('${data.contactInfo.webSite.url}')">${data.contactInfo.webSite.url}</div>`);
+	$("#birthDate").text(data.birthDate);
+	$("#country").text(data.country);
+	$("#cityTown").text(data.cityTown);
+	$("#cvPicture").html(`<img class="cv-photo" src="images/cv.png" alt="${name}"/>`);
+}
 
-	document.title = name;
-	$("#fullName").text(name);
-	$("#fullNameTitle").text(name);
-	$("#titleLanguage").html("");
-	languages.forEach(function(language,index,arr){
-		$("#titleLanguage").append(" <a href='#' onclick='loadResume(\""+ labels[language].lg +"\")'>"+ labels[language].language + "</a>");
-	});
-	$("#titleEmail").html('<a class="top-social" target="_blank" href="mailto:'+ currentResume.personalInformation.contactInfo.email.address +'">'+ currentResume.personalInformation.contactInfo.email.address +'</a>');
-	$("#titleWebsite").html('<a class="top-social" target="_blank" href="' + currentResume.personalInformation.contactInfo.webSite.url + '">' + currentResume.personalInformation.contactInfo.webSite.url + '</a>');
-	$("#birthDate").text(currentResume.personalInformation.birthDate);
-	$("#country").text(currentResume.personalInformation.country);
-	$("#cityTown").text(currentResume.personalInformation.cityTown);
-
-	$("#cvPicture").html("<img src='images/cv.png' alt='"+ name +"' width='150' height='200'/>");
-
+function loadProfessionalExperience(data, langLabel) {
 	$("#professionalExperience").html("");
-	currentResume.professionalExperience.forEach(function(professionalExperience,index,arr){
-		var profExperience = "";
-		profExperience +=	'<div class="job">'+
-                             	'<h2><strong>' + professionalExperience.startDate+ ' / '+ professionalExperience.endDate +'</strong></h2>'+
-                            	'<h3><strong>' + currentLabel.company + ': </strong>' + professionalExperience.company+'</h3>'+
-                             	'<h3><strong>' + currentLabel.occupation +': </strong>' + professionalExperience.occupation;
-        profExperience += professionalExperience.description !== undefined ? ' - ' + professionalExperience.description : '';
-        profExperience += '</h3></div>';
-		$("#professionalExperience").append(profExperience);
+	data.forEach((item, index, arr) => {
+		$("#professionalExperience").append(
+			`<div class="job">
+				<h2><strong>${item.startDate} / ${item.endDate}</strong></h2>
+				<h3><strong>${langLabel.company}: </strong>${item.company}</h3>
+				<h3><strong>${langLabel.occupation}: </strong>${item.occupation}${item.description ? ` - ${item.description}` : ''}</h3>
+			</div>`);
 	});
+}
 
+function loadEducationalBackground(data, langLabel) {
 	$("#educationalBackground").html("");
-	currentResume.educationalBackground.forEach(function(educationalBackground,index,arr){
-		var description = educationalBackground.description != undefined ? educationalBackground.description : '';
-		$("#educationalBackground").append('<div class="job">'+
-				                             	'<h2><strong>' + educationalBackground.startDate+ ' / '+ educationalBackground.endDate +'</strong></h2>'+
-				                            	'<h3>' + educationalBackground.name + '</h3>'+
-				                            	'<h3>' + educationalBackground.center + '</h3>'+
-				                             	'<h3>' + description + '</h3>'+
-				                            '</div>'
-				                            );
+	data.forEach(function(item, index, arr){
+		$("#educationalBackground").append(
+			`<div class="job">
+				<h2><strong>${item.startDate} / ${item.endDate}</strong></h2>
+				<h3>${item.name}</h3>
+				<h3>${item.center}</h3>
+				${item.description ? `<h3>${item.description}</h3>` : ''}
+			</div>`);
 	});
+}
 
+function loadCourses(data, langLabel) {
 	$("#courses").html("");
-	currentResume.courses.forEach( function(course, index) {
-		var date = course.startDate != undefined ? course.startDate + ' / ' + course.endDate : '';
-		var center = course.center != undefined ? course.center : "";
-		var description = course.description != undefined ? course.description : '';
-		$("#courses").append( '<div class="job">'+
-									'<h3><strong>' + date + '</strong></h3>'+
-									'<h3>'+course.name+'</h3>' +
-									'<h3>'+center+'</h3>' +
-									'<h3>'+description+'</h3>' +
-							  '</div>'
-							);
+	data.forEach((item, index) => {
+		$("#courses").append(
+			`<div class="job">
+				${item.startDate ? `<h3><strong>${item.startDate} / ${item.endDate}</strong></h3>` : ''}
+				<h3>${item.name}</h3>
+				${item.center ? `<h3>${item.center}</h3>` : ''}
+				${item.description ? `<h3>${item.description}</h3>` : ''}
+			</div>`);
 	});
+}
 
+function loadOtherInformation(data, langLabel) {
 	$("#motherTonge").html("");
 	$("#foreignLanguage").html("");
-	currentResume.otherInformation.linguisticSkills.forEach( function(language, index) {
+	data.linguisticSkills.forEach((language, index) => {
 		var motherTonge = '';
 		var foreignLanguage ='';
 
-		if(language.motherTongue==="yes"){
-			$("#motherTonge").append('<div class="talent">'+
-			                              '<h2>' + language.name + '</h2>'+
-			                              '<p>' + currentLabel.level + ': ' + language.level + '</p>' +
-			                         '</div>'
-									);
-		}else{
-			var certificate = language.certificate !== undefined ? currentLabel.certificate + ': ' + language.certificate : '';
-			$("#foreignLanguage").append('<div class="talent">'+
-			                              '<h2>' + language.name + '</h2>'+
-			                              '<p>' + currentLabel.coursing + ': ' + language.coursing + '</p>' +
-			                              '<p>' + certificate + '</p>'+
-			                         '</div>'
-									);
+		if (language.motherTongue==="yes") {
+			$("#motherTonge").append(
+				`<div class="talent">
+			        <h2>${language.name}</h2>
+			        <p>${langLabel.level}: ${language.level}</p>
+			    </div>`);
+		} else {
+			var certificate = language.certificate !== undefined ? langLabel.certificate + ': ' + language.certificate : '';
+			$("#foreignLanguage").append(
+				`<div class="talent">
+					<h2>${language.name}</h2>
+					<p>${langLabel.coursing}: ${language.coursing}</p>
+					${language.certificate ? `<p>${langLabel.certificate}: ${language.certificate}</p>` : ''}
+				</div>`);
 		}
 	});
 
+	var indexSkills = Math.round(data.skills.length / 3);
+	var skills ='';
+	$("#skills").html("");
+	data.skills.forEach((skill, i) => {
+	   if (i % indexSkills === 0) {
+		   skills += `<ul class="talent">
+						   <li>${skill}</li>`;
+	   } else if ((i+1) % indexSkills === 0) {
+		   skills += `<li class="last">${skill}</li></ul>`;
+	   } else {
+		   skills += `<li>${skill}</li>`;
+	   }
+	});
+	$("#skills").html(skills);
+}
+
+function loadSocialNetworks(data, langLabel) {
 	$("#socialNetwork").html("");
-	currentResume.personalInformation.contactInfo.socialNetwork.forEach( function(social, index) {
- 		$("#socialNetwork").append('<p>'+
- 								'<a class="social-icon" target="_blank" href="' + social.url + '">'+
- 									'<img class="align" src="' + social.img +'" width="30px"/>'+
- 								'</a> '+
- 								'<a target="_blank" class="social-name" href="'+social.url+'">' + social.username + '</a>'+
- 							'</p>');
+	data.forEach((social) => {
+ 		$("#socialNetwork").append(
+			`<div class="social-item click" onclick="window.open('${social.url}')">
+				<img class="social-image" src="${social.img}"/>
+				<label class="social-name" href="${social.url}"> ${social.username}</label>
+			</div>`);
  	});
+}
 
- 	var indexSkills = Math.round(currentResume.otherInformation.skills.length / 3);
- 	var skills ='';
- 	$("#skills").html("");
- 	currentResume.otherInformation.skills.forEach( function(skill, i) {
-		if(i % indexSkills == 0){
-			skills += '<ul class="talent">'+
-							'<li>' + skill + '</li>';
-		}else if ((i+1) % indexSkills==0){
-			skills += '<li class="last">' + skill + '</li></ul>';
-		}else{
-			skills += '<li>' + skill +'</li>';
-		}
- 	});
- 	$("#skills").html(skills);
+function loadResumeData(lang){
+	var langLabel = labelsTrans.get(lang);
+	var langResume = resume.get(lang);
+	if (!langResume) {
+		throw new Error("Language does not exist!");
+	}
+
+	var commonResume = resume.get(COMMON);
+	Object.assign(langResume.personalInformation, commonResume.personalInformation);
+
+	var name = commonResume.personalInformation.name.firstName + " " + commonResume.personalInformation.name.lastName;
+
+	// name
+	document.title = name;
+	$("#fullName").text(name);
+	$("#fullNameTitle").text(name);
+
+	// languages
+	$("#titleLanguage").html("");
+	languages.forEach((language) => {
+		$("#titleLanguage").append(`<div class="language-item" onclick="reloadResume('${labelsTrans.get(language).lg}')">${labelsTrans.get(language).language}</div>`);
+	});
+	
+	// cv data 
+	loadPersonalInfo(langResume.personalInformation, langLabel);
+	loadProfessionalExperience(langResume.professionalExperience, langLabel);
+	loadEducationalBackground(langResume.educationalBackground, langLabel);
+	loadCourses(langResume.educationalBackground, langLabel);
+	loadOtherInformation(langResume.otherInformation, langLabel);
+	loadSocialNetworks(langResume.personalInformation.contactInfo.socialNetwork, langLabel);
 
 }
 
-function loadLabels(){
-	$("#labelPersonalData").text(currentLabel.personalData);
-	$("#labelFullName").text(currentLabel.fullName);
-	$("#labelCountry").text(currentLabel.country);
-	$("#labelBirthDate").text(currentLabel.birthDate);
-	$("#labelCountry").text(currentLabel.country);
-	$("#labelCityTown").text(currentLabel.cityTown);
-	$("#labelProfessionalExperience").text(currentLabel.professionalExperience);
-	$("#labelCompany").text(currentLabel.company);
-	$("#labelOccupation").text(currentLabel.occupation);
-	$("#labelEducationalBackground").text(currentLabel.educationalBackground);
-	$("#labelComplementaryTraining").text(currentLabel.complementaryTraining);
-	$("#labelComputingSkills").text(currentLabel.computingSkills);
-	$("#labelMotherTonge").text(currentLabel.motherTonge);
-	$("#labelForeignLanguage").text(currentLabel.foreignLanguage);
-	$("#labelLevel").text(currentLabel.level);
-	$("#labelCoursing").text(currentLabel.coursing);
-	$("#labelCertificate").text(currentLabel.certificate);
+function showCV() {
+	$(".loader-container").removeClass("visible").addClass("hidden");
+	$(".cv-container").removeClass("hidden").addClass("visible");
 }
+
+function loadResume(lang) {
+	loadLabels(lang);
+	loadResumeData(lang);
+	setTimeout(() => showCV(), 1000);
+}
+
+function hideCV() {
+	$(".cv-container").removeClass("visible").addClass("hidden");
+	$(".loader-container").removeClass("hidden").addClass("visible");
+}
+
+function reloadResume(lang) {
+	hideCV();
+	loadResume(lang);
+}
+
+$(document).ready(() => {
+
+	var language = navigator.language || navigator.userLanguage;
+	language = language.substr(0,2);
+
+	if (language !== ES){
+		language = EN;
+	}
+	console.log("Language: " + language);
+	$.getJSON("resume.json", (data) => {
+		mapResume(data.resume);
+		loadResume(language);
+	}).fail((error) => {
+		console.log( "JSON Error: " , JSON.stringify(error));
+		console.log("JSON", JSON.stringify(JSON.parse(error.responseText)));
+		window.location.href = "https://asanchez156.github.io/";
+	}).always(() => {
+		// console.log( "Loaded!" );
+	});
+
+});
+
+
+
