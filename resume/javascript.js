@@ -208,9 +208,21 @@ function loadResumeData(lang){
 
 }
 
+$loader = $(".loader-container");
+$cv = $(".cv-container");
+
+function hideCV() {
+	$cv.hide();
+	$loader.show();
+	$cv.removeClass("visible").addClass("hidden");
+	$loader.removeClass("hidden").addClass("visible");
+}
+
 function showCV() {
-	$(".loader-container").removeClass("visible").addClass("hidden");
-	$(".cv-container").removeClass("hidden").addClass("visible");
+	$loader.hide();
+	$cv.show();
+	$loader.removeClass("visible").addClass("hidden");
+	$cv.removeClass("hidden").addClass("visible");
 }
 
 function loadResume(lang) {
@@ -219,18 +231,12 @@ function loadResume(lang) {
 	setTimeout(() => showCV(), 1000);
 }
 
-function hideCV() {
-	$(".cv-container").removeClass("visible").addClass("hidden");
-	$(".loader-container").removeClass("hidden").addClass("visible");
-}
-
 function reloadResume(lang) {
 	hideCV();
 	loadResume(lang);
 }
 
 $(document).ready(() => {
-
 	var language = navigator.language || navigator.userLanguage;
 	language = language.substr(0,2);
 
