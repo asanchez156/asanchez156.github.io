@@ -1,6 +1,9 @@
+html {
+    background-color: #E7EEEF;
+}
+
 body {
     /* font-family: Georgia; */
-    background-color: #E7EEEF;
 }
 
 .loader-container{
