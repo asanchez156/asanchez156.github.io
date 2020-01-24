@@ -244,7 +244,7 @@ $(document).ready(() => {
 		language = EN;
 	}
 	console.log("Language: " + language);
-	$.getJSON("resume.json", (data) => {
+	$.getJSON("resume.json?f=" + new Date(), (data) => {
 		mapResume(data.resume);
 		loadResume(language);
 	}).fail((error) => {
