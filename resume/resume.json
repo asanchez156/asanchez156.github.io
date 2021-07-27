@@ -172,7 +172,7 @@
           "XML/MySQL/HSQL/Hibernate",
           "Oracle SQL/SQL Server",
           "SBC: RaspberryPi/Arduino",
-          "ESP8266, ESP32 Microcontrollers",
+          "ESP8266 y ESP32",
           "Eclipse/Netbeans/Shell",
           "CVS/Subversion/Git",
           "OS X/Linux/Windows"
@@ -341,7 +341,7 @@
           "XML/MySQL/HSQL/Hibernate",
           "Oracle SQL/SQL Server",
           "SBC: RaspberryPi/Arduino",
-          "ESP8266, ESP32 Microcontrollers",
+          "ESP8266 and ESP32",
           "Eclipse/Netbeans/Shell",
           "CVS/Subversion/Git",
           "OS X/Linux/Windows"
