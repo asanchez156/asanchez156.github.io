@@ -35,7 +35,7 @@
           ],
           "webSite": {
             "img": "images/site.png",
-            "url": "http://asanchez.design/"
+            "url": "http://asanchez.my-style.in/"
           }
         },
         "image": "images/cv.png"
@@ -99,9 +99,9 @@
           "type": "employee",
           "startDate": "2017-05-02",
           "endDate": "Actualmente",
-          "company": "Iris Advanced Engineering",
-          "occupation": "Full-stack developer",
-          "description": "Arqutectura: Kubernetes, docker, GCloud. Base de datos: PostgreSQL, PgAdmin. Backend: Node JS Express, Restify, Nest JS. Frontend: Angular. Visual Studio Code. Scrum. Git."
+          "company": "Iris Technology",
+          "occupation": "Senior Full-stack developer",
+          "description": "Arquitectura: Kubernetes, docker, GCloud. Base de datos: PostgreSQL, PgAdmin. Backend: Node JS Express, Restify, Nest JS. Frontend: Angular. Visual Studio Code. Scrum. Git. En remoto desde el 3 cuatrimestre del 2017."
         },
         {
           "type": "employee",
@@ -268,9 +268,10 @@
           "type": "employee",
           "startDate": "2017-05-02",
           "endDate": "At the current time",
-          "company": "Iris Advanced Engineering",
-          "occupation": "Full-stack developer",
-          "description": "Architecture: Kubernetes, docker, GCloud. Database: PostgreSQL, PgAdmin. Backend: Node JS Express, Restify, Nest JS. Frontend: Angular. Visual Studio Code. Scrum. Git."
+          "company": "Iris Technology",
+          "occupation": "Senior Full-stack developer",
+          "description": "Architecture: Kubernetes, docker, GCloud. Database: PostgreSQL, PgAdmin. Backend: Node JS Express, Restify, Nest JS. Frontend: Angular. Visual Studio Code. Working remotely since third semester of 2017. 
+          ."
         },
         {
           "type": "employee",
