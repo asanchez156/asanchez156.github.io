@@ -270,8 +270,7 @@
           "endDate": "At the current time",
           "company": "Iris Technology",
           "occupation": "Senior Full-stack developer",
-          "description": "Architecture: Kubernetes, docker, GCloud. Database: PostgreSQL, PgAdmin. Backend: Node JS Express, Restify, Nest JS. Frontend: Angular. Visual Studio Code. Working remotely since third semester of 2017. 
-          ."
+          "description": "Architecture: Kubernetes, docker, GCloud. Database: PostgreSQL, PgAdmin. Backend: Node JS Express, Restify, Nest JS. Frontend: Angular. Visual Studio Code. Working remotely since third semester of 2017."
         },
         {
           "type": "employee",
