@@ -7,7 +7,6 @@
           "lastName": "Sánchez"
         },
         "birthDate": "1992",
-        "cityTown": "Irún, Guipúzcoa",
         "contactInfo": {
           "email": {
             "img": "images/email.png",
@@ -39,7 +38,6 @@
     },
     "es": {
       "personalInformation": {
-        "country": "España",
         "aboutMe": "Ingeniero Informático, especializado en Ingeniería del Software. Apasionado por la automatización de “las cosas”, nacido en una pequeña ciudad de Guipúzcoa llamada Irún, España, en 1992. Desde pequeño me he interesado por la innovación y la automatización de los dispositivos que me rodean. En mi tiempo libre me gusta informarme sobre los cambios que constantemente se están produciendo en el sector de la información, desde componentes hasta aplicaciones, sobre todo del desarrollo web, domótica (Home assistant, EspHome, ZigbeeToMqtt) y IoT. Me apasiona viajar para conocer mundo y otras culturas como el deporte individual y colectivo."
       },
       "educationalBackground": [
@@ -208,7 +206,6 @@
     },
     "en": {
       "personalInformation": {
-        "country": "Spain",
         "aboutMe": "Computer Science Engineer, specialized in Software Engineering. Passionate about the automation of \"things\", born in a small city of Guipúzcoa called Irún, Spain, in 1992. Since I was little I have been interested in the innovation and automation of the devices that surround me. In my free time I like to inform myself about the changes that are constantly occurring in the information sector, be it or apps, specially about web development, home automation (Home assistant, EspHome, ZigbeeToMqtt) and IoT. I love traveling to know the world and other cultures as doing sports individually or in group."
       },
       "educationalBackground": [
