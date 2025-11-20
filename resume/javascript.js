@@ -3,7 +3,7 @@ var labelsTrans = new Map ([
 		"language" : "Español",
 		"lg": "es",
 		"personalData": "Perfil",
-		"fullName" : "Nombre completo",
+		"fullName" : "Nombre",
 		"birthDate" : "Año de Nacimiento",
 		"country" : "País",
 		"cityTown" : "Ciudad",
@@ -23,7 +23,7 @@ var labelsTrans = new Map ([
 		"language" : "English",
 		"lg": "en",
 		"personalData": "Profile",
-		"fullName" : "Full name",
+		"fullName" : "Name",
 		"birthDate" : "Birthdate",
 		"country" : "Country",
 		"cityTown" : "City",
@@ -59,10 +59,10 @@ function loadLabels(lang) {
 	var langLabel = labelsTrans.get(lang);
 	$("#labelPersonalData").text(langLabel.personalData);
 	$("#labelFullName").text(langLabel.fullName);
-	$("#labelCountry").text(langLabel.country);
-	$("#labelBirthDate").text(langLabel.birthDate);
-	$("#labelCountry").text(langLabel.country);
-	$("#labelCityTown").text(langLabel.cityTown);
+	//$("#labelCountry").text(langLabel.country);
+	//$("#labelBirthDate").text(langLabel.birthDate);
+	//$("#labelCountry").text(langLabel.country);
+	//$("#labelCityTown").text(langLabel.cityTown);
 	$("#labelProfessionalExperience").text(langLabel.professionalExperience);
 	$("#labelCompany").text(langLabel.company);
 	$("#labelOccupation").text(langLabel.occupation);
@@ -80,9 +80,9 @@ function loadPersonalInfo(data, langLabel) {
 	
 	$("#titleEmail").html(`<div onclick="window.location='mailto:${data.contactInfo.email.address}';">${data.contactInfo.email.address}</div>`);
 	//$("#titleWebsite").html(`<div onclick="window.open('${data.contactInfo.webSite.url}')">${data.contactInfo.webSite.url}</div>`);
-	$("#birthDate").text(data.birthDate);
-	$("#country").text(data.country);
-	$("#cityTown").text(data.cityTown);
+	//$("#birthDate").text(data.birthDate);
+	//$("#country").text(data.country);
+	//$("#cityTown").text(data.cityTown);
 	$("#cvPicture").html(`<img class="cv-photo" src="images/cv.png" alt="${name}"/>`);
 }
 
