@@ -15,12 +15,14 @@
           "socialNetwork": [
             {
               "name": "LinkedIn",
+              "id": "linkedin",
               "username": "asanchezed",
               "img": "images/linkedin.png",
               "url": "https://www.linkedin.com/in/asanchezed"
             },
             {
               "name": "GitHub",
+              "id": "github",
               "username": "@asanchez156",
               "img": "images/github.png",
               "url": "https://github.com/asanchez156"

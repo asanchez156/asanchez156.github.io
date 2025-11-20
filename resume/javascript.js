@@ -165,11 +165,25 @@ function loadOtherInformation(data, langLabel) {
 }
 
 function loadSocialNetworks(data, langLabel) {
+    const logoCDN = {
+        linkedin: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg",
+        github:   "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg",
+        twitter:  "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg",
+        x:        "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg",
+        instagram:"https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg",
+        facebook:"https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg",
+        youtube: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg",
+        behance: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/behance.svg",
+        dribbble:"https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dribbble.svg",
+        default: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/globe.svg"
+    };
     $("#socialNetwork").html("");
+
     data.forEach((social) => {
+        let icon = logoCDN[social.id] || logoCDN.default;
         $("#socialNetwork").append(
             `<div class="social-item click" onclick="window.open('${social.url}')">
-				<img class="social-image" src="${social.img}"/>
+				<img class="social-image" src="${icon}"/>
 				<label class="social-name" href="${social.url}"> ${social.username}</label>
 			</div>`);
     });
