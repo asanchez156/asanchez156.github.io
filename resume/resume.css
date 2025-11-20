@@ -1,264 +1,303 @@
 html {
-    background: linear-gradient(135deg, #eef3f5, #dfe8eb);
-    min-height: 100%;
+    background-color: #E7EEEF;
 }
 
 body {
-    font-family: "Inter", "Plus Jakarta Sans", system-ui, sans-serif;
-    color: #0C4254;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
+    /* font-family: Georgia; */
 }
 
-/* =========================================
-   LOADER MODERNO
-   ========================================= */
-.loader-container {
-    position: fixed;
-    inset: 0;
+.loader-container{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(240, 244, 245, 0.7);
-    backdrop-filter: blur(6px);
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    align-items: center; /*centers items on the cross-axis (y by default)*/
 }
 
 .loader-container .loader {
-    width: 70px;
-    height: 70px;
-    border: 6px solid rgba(79,167,200,0.2);
-    border-top-color: #4FA7C8;
+    border: 16px solid #f3f3f3;
     border-radius: 50%;
-    animation: spin 0.9s ease-in-out infinite;
+    border-top: 16px solid #52A9CC;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
-/* =========================================
-   ANIMACIÓN DE VISIBILIDAD
-   ========================================= */
 .visible {
     visibility: visible;
     opacity: 1;
-    transition: opacity .5s ease;
+    transition: opacity 1s linear;
 }
+
 .hidden {
     visibility: hidden;
     opacity: 0;
-    transition: opacity .5s ease, visibility 0s .5s;
+    transition: visibility 0s 2s, opacity 1s linear;
 }
 
-/* =========================================
-   CONTENEDOR PRINCIPAL
-   ========================================= */
 .cv-inner-container {
-    max-width: 1080px;
-    margin: 60px auto;
-    padding: 60px 70px;
-    background: rgba(255,255,255,0.85);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 25px;
-    border: 1px solid rgba(255,255,255,0.6);
-    box-shadow:
-            0 8px 28px rgba(0,0,0,0.07),
-            0 0 0 1px rgba(255,255,255,0.5) inset;
+    padding: 10px 80px;
+    margin: 80px auto;
+    background: white;
+    border: solid #52A9CC;
+    color: #135C78;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),
+    0 3px 14px 1px rgba(0,0,0,.14),
+    0 3px 14px 2px rgba(0,0,0,.12);
+    /* border-width: 8px 0 2px 0; */
+    border-width: 0;
 }
 
-/* =========================================
-   CABECERA MODERNA
-   ========================================= */
-.header-container {
-    margin-bottom: 3em;
+.section-container {
+    margin-bottom: 2em;
     padding-bottom: 2em;
-    border-bottom: 2px solid rgba(79,167,200,0.4);
+    border-bottom: 2px solid #52A9CC;
 }
 
-.header-inner-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* //-- header, body, footer -- */
+
+.header-container {
+    margin: 2em 0 2.5em 0;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid #52A9CC;
 }
 
-.title-name {
-    font-size: 46px;
-    font-weight: 800;
-    line-height: 1.1;
+.header-container h2 {
     text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: #083645;
+    letter-spacing: 2px;
+}
+
+.footer-container {
+    margin-bottom: 2em;
+    padding: 0.5em 0 1em 0;
+}
+
+/* //-- core typography and style -- */
+
+.header-container .title-name {
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-container .header-inner-container {
+    display: flex;
+}
+
+h2 {
+    font-size: 152%
+}
+
+h3, h4 {
+    font-size: 122%;
+}
+
+p {
+    font-size: 100%;
+    line-height: 18px;
+    padding-right: 3em;
+}
+
+a {
+    color: #52A9CC;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+li {
+    line-height: 24px;
+    border-bottom: 0.5px solid #52A9CC;
+}
+
+p.enlarge {
+    font-size: 144%;
+    padding-right: 6.5em;
+    line-height: 24px;
+    width: 330px;
+}
+
+p.enlarge2 {
+    font-size: 144%;
+    padding-right: 7.5em;
+    line-height: 24px;
+    width: 330px;
+}
+
+p.enlarge span {
+    color: #000
+}
+
+
+.language-container {
+    display: flex;
 }
 
 .language-container .language-item {
-    margin-right: 10px;
-    padding: 4px 10px;
-    font-size: 15px;
-    color: #4FA7C8;
-    background: rgba(79,167,200,0.15);
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all .25s ease;
+    margin-left: 5px;
+    font-size: 18px;
 }
 
-.language-container .language-item:hover {
-    background: #4FA7C8;
-    color: white;
-}
-
-/* Contact info moderna */
 .contact-info-container .contact-info-item {
-    text-align: right;
     font-size: 16px;
-    margin-top: 6px;
-    padding: 6px 10px;
-    background: rgba(79,167,200,0.1);
-    border-radius: 6px;
-    color: #0C4254;
-    transition: all .25s ease;
-}
-.contact-info-container .contact-info-item:hover {
-    background: #4FA7C8;
-    color: white;
+    margin-top: 7px;
+    text-align: right;
 }
 
-/* =========================================
-   FOTOS
-   ========================================= */
+.cv-photo-container {
+    float: right;
+}
+
 .cv-photo-container .cv-photo {
+    border-radius: 10px;
     width: 150px;
     height: 200px;
-    object-fit: cover;
-    border-radius: 18px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
 }
 
-/* =========================================
-   SECCIONES
-   ========================================= */
-.section-container {
-    margin-bottom: 3em;
-    padding-bottom: 2.5em;
-    border-bottom: 2px solid rgba(79,167,200,0.25);
+.first h2 {
+    font-style: italic;
 }
 
-.section-container:last-of-type {
-    border-bottom: none;
+.last {
+    border-bottom: 0
 }
 
-/* TITULOS MODERNOS */
-.section-container h2 {
-    font-size: 22px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #0B3A49;
-    margin-bottom: 0.8em;
-}
+/* //-- section styles -- */
 
-/* =========================================
-   TIPOGRAFÍA PRINCIPAL
-   ========================================= */
-h2 { font-weight: 700; }
-h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 6px 0;
-}
-p {
-    line-height: 1.65;
-    color: #0C4254;
-}
-
-/* Enfatizados */
-p.enlarge,
-p.enlarge2 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: #083645;
-}
-
-/* =========================================
-   JOB / EXPERIENCIA — TARJETAS MODERNAS
-   ========================================= */
-.job {
-    padding: 22px 24px;
-    margin-bottom: 20px;
-    background: white;
-    border-radius: 14px;
-    border: 1px solid rgba(200,200,200,0.4);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.job:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.job h2 strong {
-    font-size: 17px;
-    color: #4FA7C8;
-}
-
-/* =========================================
-   SKILLS – NUEVO ESTILO
-   ========================================= */
-.skills-list ul { padding-left: 0; }
-.skills-list li {
-    list-style: none;
-    padding: 8px 12px;
-    margin: 4px 0;
-    background: rgba(79,167,200,0.12);
-    border-radius: 6px;
-    color: #083645;
-    font-weight: 500;
-}
-
-/* =========================================
-   LENGUAS
-   ========================================= */
-.talent {
-    width: 30%;
+/* a#pdf {
+    display: block;
     float: left;
-    margin-right: 3%;
+    background: #666;
+    color: white;
+    padding: 6px 50px 6px 12px;
+    margin-bottom: 6px;
+    text-decoration: none;
+}
+
+a#pdf:hover {
+    background: #222;
+} */
+
+.job {
+    position: relative;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 0.5px solid #52A9CC;
+}
+
+.job h4 {
+    position: absolute;
+    top: 0.35em;
+    right: 0
+}
+
+.job p {
+    margin: 0.75em 0 3em 0;
+}
+
+.last {
+    border: none;
+}
+
+.skills-list {}
+
+.skills-list ul {
+    margin: 0;
+}
+
+.skills-list li {
+    margin: 3px 0;
+    padding: 3px 0;
+}
+
+.skills-list li span {
+    font-size: 152%;
+    display: block;
+    margin-bottom: -2px;
+    padding: 0
+}
+
+.talent {
+    width: 32%;
+    float: left
 }
 
 .talent h2 {
-    font-size: 20px;
     margin-bottom: 6px;
-    font-weight: 700;
 }
 
-/* =========================================
-   FOOTER – SOCIAL CLEAN MODERN
-   ========================================= */
-.footer-container {
-    text-align: center;
-    margin-top: 50px;
+.section-container .title-container {
+    width: 75.2%;
 }
 
-.social-item {
+.section-container div.first {
+    width: 15.0%;
+}
+
+.footer-container .social-container {
+    width: 170px;
+    margin: 0 auto;
+}
+
+.footer-container .social-container .social-item {
+    color: #52A9CC;
+    font-size: 92%;
+    vertical-align: middle;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(79,167,200,0.15);
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 8px;
-    transition: all .25s;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.footer-container .social-container .social-item .social-image {
+    /* display: inline-block; */
+    height: 30px;
+    flex: 0.15;
+    margin-right: 10px;
+}
+.footer-container .social-container .social-item .social-name {
+    flex: 0.8;
+}
+
+.footer-container .social-container .social-item .social-image,
+.footer-container .social-container .social-item .social-name,
+.footer-container .social-container .social-item,
+.language-container .language-item,
+.contact-info-container .contact-info-item {
+    color: #52A9CC;
     cursor: pointer;
 }
 
-.social-item:hover {
-    background: #4FA7C8;
-    color: white;
+.footer-container .social-container .social-item:hover,
+.language-container .language-item:hover,
+.contact-info-container .contact-info-item:hover {
+    opacity: 0.7;
+}
+.footer-container .social-container .social-item:active,
+.language-container .language-item:active,
+.contact-info-container .contact-info-item:active {
+    color: #135C78;
+    opacity: 1;
 }
 
-.social-image {
-    height: 28px;
-    margin-right: 10px;
+.click .disabled {
+    cursor: not-allowed;
 }
