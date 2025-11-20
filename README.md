@@ -1,2 +1,2 @@
-# My site - Andoni Sánchez Antolín
+# My site - Andoni Sánchez
 This is who I am
