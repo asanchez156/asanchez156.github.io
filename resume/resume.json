@@ -151,7 +151,7 @@
           "Nest JS/ Express Framework",
           "Spring 4/ Java Server Faces",
           "HTML5/SASS/Angular",
-          "Javascript/JQuery",
+          "Javascript/Typescript/JQuery",
           "Ionic Framework/Cordoba",
           "Docker, Kubernetes, GCloud",
           ".NET(C#/VB)/C/C++",
@@ -200,6 +200,7 @@
     },
     "en": {
       "personalInformation": {
+        "country": "Spain",
         "aboutMe": "Computer Science Engineer, specialized in Software Engineering. Passionate about the automation of \"things\", born in a small city of Guipúzcoa called Irún, Spain, in 1992. Since I was little I have been interested in the innovation and automation of the devices that surround me. In my free time I like to inform myself about the changes that are constantly occurring in the information sector, be it or apps, specially about web development, home automation (Home assistant, EspHome, ZigbeeToMqtt) and IoT. I love traveling to know the world and other cultures as doing sports individually or in group."
       },
       "educationalBackground": [

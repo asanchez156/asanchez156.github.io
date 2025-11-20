@@ -80,9 +80,9 @@ function loadPersonalInfo(data, langLabel) {
 
     $("#titleEmail").html(`<div onclick="window.location='mailto:${data.contactInfo.email.address}';">${data.contactInfo.email.address}</div>`);
     //$("#titleWebsite").html(`<div onclick="window.open('${data.contactInfo.webSite.url}')">${data.contactInfo.webSite.url}</div>`);
-    //$("#birthDate").text(data.birthDate);
-    //$("#country").text(data.country);
-    //$("#cityTown").text(data.cityTown);
+    $("#birthDate").text(data.birthDate);
+    $("#country").text(data.country);
+    $("#cityTown").text(data.cityTown);
     $("#cvPicture").html(`<img class="cv-photo" src="images/cv.png" alt="${name}"/>`);
 }
 
@@ -116,7 +116,7 @@ function loadCourses(data, langLabel) {
     data.forEach((item, index) => {
         $("#courses").append(
             `<div class="job">
-				${item.startDate ? `<h3><strong>${item.startDate} / ${item.endDate}</strong></h3>` : ''}
+				${item.startDate ? `<h2><strong>${item.startDate} / ${item.endDate}</strong></h2>` : ''}
 				<h3>${item.name}</h3>
 				${item.center ? `<h3>${item.center}</h3>` : ''}
 				${item.description ? `<h3>${item.description}</h3>` : ''}
