@@ -25,12 +25,6 @@
               "img": "images/github.png",
               "url": "https://github.com/asanchez156"
             },
-            {
-              "name": "Twitter",
-              "username": "@sanchezed",
-              "img": "images/twitter.png",
-              "url": "https://twitter.com/andonisanchezz"
-            }
           ]
         },
         "image": "images/cv.png"
