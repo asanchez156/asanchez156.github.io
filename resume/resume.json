@@ -4,21 +4,21 @@
       "personalInformation": {
         "name": {
           "firstName": "Andoni",
-          "lastName": "Sánchez Antolín"
+          "lastName": "Sánchez"
         },
         "birthDate": "1992",
         "cityTown": "Irún, Guipúzcoa",
         "contactInfo": {
           "email": {
             "img": "images/email.png",
-            "address": "andoni.sanchez.antolin@gmail.com"
+            "address": "asanchezed@gmail.com"
           },
           "socialNetwork": [
             {
               "name": "LinkedIn",
               "username": "andonisanchezantolin",
               "img": "images/linkedin.png",
-              "url": "https://www.linkedin.com/in/andonisanchezantolin"
+              "url": "https://www.linkedin.com/in/asanchezed"
             },
             {
               "name": "GitHub",
