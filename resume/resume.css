@@ -78,6 +78,7 @@ html, body {
 =========================== */
 
 .cv-inner-container {
+    position: relative;
     max-width: 940px;
     margin: 70px auto;
     padding: 60px 70px;
@@ -254,6 +255,7 @@ a:hover {
 =========================== */
 
 .language-container {
+    margin-top: 10px;
     display: flex;
     gap: 12px;
 }
@@ -360,4 +362,46 @@ a:hover {
 .click .disabled {
     cursor: not-allowed;
     opacity: 0.4;
+}
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 10mm 12mm;
+    }
+
+    .cv-inner-container {
+        box-shadow: none !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .language-container {
+        display: none;
+    }
+
+    .job {
+        padding: 0;
+    }
+
+    * {
+        box-shadow: none !important;
+    }
+}
+
+
+.print-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 14px;
+    background: var(--primary-light);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+@media print {
+    .print-button { display: none !important; }
 }
