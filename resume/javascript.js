@@ -79,7 +79,7 @@ function loadLabels(lang) {
 function loadPersonalInfo(data, langLabel) {
 	
 	$("#titleEmail").html(`<div onclick="window.location='mailto:${data.contactInfo.email.address}';">${data.contactInfo.email.address}</div>`);
-	$("#titleWebsite").html(`<div onclick="window.open('${data.contactInfo.webSite.url}')">${data.contactInfo.webSite.url}</div>`);
+	//$("#titleWebsite").html(`<div onclick="window.open('${data.contactInfo.webSite.url}')">${data.contactInfo.webSite.url}</div>`);
 	$("#birthDate").text(data.birthDate);
 	$("#country").text(data.country);
 	$("#cityTown").text(data.cityTown);
