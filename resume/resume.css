@@ -1,20 +1,264 @@
-/* Modernizado con Flexbox sin tocar IDs */
-body { margin:0; font-family:Arial, sans-serif; background:#f4f4f4; }
-.cv-container { display:flex; justify-content:center; padding:20px; }
-.cv-inner-container { width:100%; max-width:900px; background:white; padding:30px; border-radius:12px; }
+html {
+    background: linear-gradient(135deg, #eef3f5, #dfe8eb);
+    min-height: 100%;
+}
 
-.header-inner-container { display:flex; justify-content:space-between; align-items:center; }
+body {
+    font-family: "Inter", "Plus Jakarta Sans", system-ui, sans-serif;
+    color: #0C4254;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
 
-.section-container { margin-top:30px; }
+/* =========================================
+   LOADER MODERNO
+   ========================================= */
+.loader-container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(240, 244, 245, 0.7);
+    backdrop-filter: blur(6px);
+}
 
-.personal-flex { display:flex; justify-content:space-between; align-items:center; }
+.loader-container .loader {
+    width: 70px;
+    height: 70px;
+    border: 6px solid rgba(79,167,200,0.2);
+    border-top-color: #4FA7C8;
+    border-radius: 50%;
+    animation: spin 0.9s ease-in-out infinite;
+}
 
-.cv-photo-container img { width:140px; height:140px; border-radius:50%; object-fit:cover; }
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
 
-.skills-flex { display:flex; gap:40px; }
+/* =========================================
+   ANIMACIÓN DE VISIBILIDAD
+   ========================================= */
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s ease;
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease, visibility 0s .5s;
+}
 
-.loader-container { position:fixed; top:0; left:0; right:0; bottom:0;
-display:flex; align-items:center; justify-content:center; background:white; }
-.loader { width:50px; height:50px; border-radius:50%; border:6px solid #ddd;
-border-top-color:#333; animation:spin 1s linear infinite; }
-@keyframes spin { to { transform:rotate(360deg);} }
+/* =========================================
+   CONTENEDOR PRINCIPAL
+   ========================================= */
+.cv-inner-container {
+    max-width: 1080px;
+    margin: 60px auto;
+    padding: 60px 70px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow:
+            0 8px 28px rgba(0,0,0,0.07),
+            0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+
+/* =========================================
+   CABECERA MODERNA
+   ========================================= */
+.header-container {
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+    border-bottom: 2px solid rgba(79,167,200,0.4);
+}
+
+.header-inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-name {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #083645;
+}
+
+.language-container .language-item {
+    margin-right: 10px;
+    padding: 4px 10px;
+    font-size: 15px;
+    color: #4FA7C8;
+    background: rgba(79,167,200,0.15);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.language-container .language-item:hover {
+    background: #4FA7C8;
+    color: white;
+}
+
+/* Contact info moderna */
+.contact-info-container .contact-info-item {
+    text-align: right;
+    font-size: 16px;
+    margin-top: 6px;
+    padding: 6px 10px;
+    background: rgba(79,167,200,0.1);
+    border-radius: 6px;
+    color: #0C4254;
+    transition: all .25s ease;
+}
+.contact-info-container .contact-info-item:hover {
+    background: #4FA7C8;
+    color: white;
+}
+
+/* =========================================
+   FOTOS
+   ========================================= */
+.cv-photo-container .cv-photo {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* =========================================
+   SECCIONES
+   ========================================= */
+.section-container {
+    margin-bottom: 3em;
+    padding-bottom: 2.5em;
+    border-bottom: 2px solid rgba(79,167,200,0.25);
+}
+
+.section-container:last-of-type {
+    border-bottom: none;
+}
+
+/* TITULOS MODERNOS */
+.section-container h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0B3A49;
+    margin-bottom: 0.8em;
+}
+
+/* =========================================
+   TIPOGRAFÍA PRINCIPAL
+   ========================================= */
+h2 { font-weight: 700; }
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 6px 0;
+}
+p {
+    line-height: 1.65;
+    color: #0C4254;
+}
+
+/* Enfatizados */
+p.enlarge,
+p.enlarge2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #083645;
+}
+
+/* =========================================
+   JOB / EXPERIENCIA — TARJETAS MODERNAS
+   ========================================= */
+.job {
+    padding: 22px 24px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 14px;
+    border: 1px solid rgba(200,200,200,0.4);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.job:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.job h2 strong {
+    font-size: 17px;
+    color: #4FA7C8;
+}
+
+/* =========================================
+   SKILLS – NUEVO ESTILO
+   ========================================= */
+.skills-list ul { padding-left: 0; }
+.skills-list li {
+    list-style: none;
+    padding: 8px 12px;
+    margin: 4px 0;
+    background: rgba(79,167,200,0.12);
+    border-radius: 6px;
+    color: #083645;
+    font-weight: 500;
+}
+
+/* =========================================
+   LENGUAS
+   ========================================= */
+.talent {
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+}
+
+.talent h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+/* =========================================
+   FOOTER – SOCIAL CLEAN MODERN
+   ========================================= */
+.footer-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(79,167,200,0.15);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 8px;
+    transition: all .25s;
+    cursor: pointer;
+}
+
+.social-item:hover {
+    background: #4FA7C8;
+    color: white;
+}
+
+.social-image {
+    height: 28px;
+    margin-right: 10px;
+}
